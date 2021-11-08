@@ -42,4 +42,4 @@ document.getElementById('solution2').innerHTML = 'ODD'
 
 
 whiteboard1()
-whiteboard2(11)
+whiteboard2(document.getElementById('inputNumber'))
