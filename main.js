@@ -29,21 +29,21 @@ function whiteboard2() {
   document.getElementById('instructions2').innerHTML = instructions2
 }
 
-  function evenOrOdd(num) {
+function evenOrOdd(num) {
     if ( num % 2 == 0) {
       document.getElementById('solution2').innerHTML = 'EVEN'
           } else
     document.getElementById('solution2').innerHTML = 'ODD'
-  }
+}
 
-  function whiteboard3() {
+function whiteboard3() {
     let problem3 = 'Longest Word'
     let instructions3 = 'Write a function that will take in a single argument, a string. The string will be a sentence and your function will return the longest word in that sentence. If there are multiple words tied for longest word, then return the word that appears in the sentence first.'
     document.getElementById('problem3').innerHTML = problem3
     document.getElementById('instructions3').innerHTML = instructions3
-  }
+}
 
-  function longestWord(sentence) {
+function longestWord(sentence) {
     let arr = sentence.split(' ')
     let longest = ''
     for (let i=0; i < arr.length; i++) {
@@ -52,7 +52,7 @@ function whiteboard2() {
       }
     }
     document.getElementById('solution3').innerHTML = longest
-  }
+}
 
 whiteboard1()
 whiteboard2()
