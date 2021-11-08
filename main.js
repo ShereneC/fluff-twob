@@ -43,11 +43,18 @@ function whiteboard2() {
     document.getElementById('instructions3').innerHTML = instructions3
   }
 
-  function longestWord() {
-    let string = 'What is the longest word in this sentence?'
-
+  function longestWord(sentence) {
+    let arr = sentence.split(' ')
+    let longest = ''
+    for (let i=0; i < arr.length; i++) {
+      if (arr[i].length > longest.length) {
+        longest = arr[i]
+      }
+    }
+    document.getElementById('solution3').innerHTML = longest
   }
 
 whiteboard1()
 whiteboard2()
 whiteboard3()
+longestWord('What is the longest word in this sentence')
