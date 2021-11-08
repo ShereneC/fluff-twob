@@ -24,4 +24,16 @@ if (dog.altered) {
 
 }
 
+function whiteboard2(num) {
+
+  let problem2 = 'Even or Odd'
+  let instructions2 = 'Write a function that takes in a number and returns \"even\" if the number is even or \"odd\" if it is odd.'
+
+document.getElementById('problem2').innerHTML = problem2
+document.getElementById('instructions2').innerHTML = instructions2
+}
+
+
+
 whiteboard1()
+whiteboard2()
