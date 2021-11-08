@@ -57,4 +57,3 @@ function whiteboard2() {
 whiteboard1()
 whiteboard2()
 whiteboard3()
-longestWord('What is the longest word in this sentence')
