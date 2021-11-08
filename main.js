@@ -1,3 +1,3 @@
-let string = 'Hello World!'
+let problem1 = 'Hello World!'
 
 document.getElementById('here').innerHTML = string
