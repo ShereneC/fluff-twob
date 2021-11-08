@@ -63,7 +63,21 @@ function whiteboard4() {
 }
 
 function palindrome(str) {
-
+  let firstHalf = ''
+  let secondHalf = ''
+for (let i=0; i < str.length/2; i++) {
+  firstHalf += str[i]
+  // console.log('firsthalf is ' + firstHalf)
+}
+for (let i=str.length-1; i > (str.length/2) -1; i--) {
+  secondHalf += str[i]
+  // console.log('secondthalf is ' + secondHalf)
+}
+if (firstHalf == secondHalf) {
+  document.getElementById('solution4').innerHTML = 'This word is a Palindrome.'
+} else {
+  document.getElementById('solution4').innerHTML = 'This word is not a Palindrome'
+}
 }
 
 
@@ -71,4 +85,4 @@ whiteboard1()
 whiteboard2()
 whiteboard3()
 whiteboard4()
-palindrome('eve')
+palindrome('rever')
