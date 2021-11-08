@@ -31,9 +31,15 @@ function whiteboard2(num) {
 
 document.getElementById('problem2').innerHTML = problem2
 document.getElementById('instructions2').innerHTML = instructions2
+
+if ( num % 2 == 0) {
+  document.getElementById('solution2').innerHTML = 'EVEN'
+
+} else
+document.getElementById('solution2').innerHTML = 'ODD'
 }
 
 
 
 whiteboard1()
-whiteboard2()
+whiteboard2(11)
