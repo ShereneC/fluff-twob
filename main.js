@@ -80,8 +80,20 @@ if (firstHalf == secondHalf) {
 }
 }
 
+function whiteboard5() {
+  let problem5 = 'Most Common Letter'
+  let instructions5 = 'Write a function that takes in a single str and return the most frequently occurring letter within that string'
+  document.getElementById('problem5').innerHTML = problem5
+  document.getElementById('instructions5').innerHTML = instructions5
+}
+
+function mostCommonLetter(str) {
+
+}
 
 whiteboard1()
 whiteboard2()
 whiteboard3()
 whiteboard4()
+whiteboard5()
+mostCommonLetter('froggy')
