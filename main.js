@@ -24,22 +24,25 @@ if (dog.altered) {
 
 }
 
-function whiteboard2(num) {
-
+function whiteboard2() {
+  
   let problem2 = 'Even or Odd'
   let instructions2 = 'Write a function that takes in a number and returns \"even\" if the number is even or \"odd\" if it is odd.'
-
-document.getElementById('problem2').innerHTML = problem2
-document.getElementById('instructions2').innerHTML = instructions2
-
-if ( num % 2 == 0) {
-  document.getElementById('solution2').innerHTML = 'EVEN'
-
-} else
-document.getElementById('solution2').innerHTML = 'ODD'
+  
+  document.getElementById('problem2').innerHTML = problem2
+  document.getElementById('instructions2').innerHTML = instructions2
 }
+
+  function evenOrOdd(num) {
+
+    if ( num % 2 == 0) {
+      document.getElementById('solution2').innerHTML = 'EVEN'
+      
+    } else
+    document.getElementById('solution2').innerHTML = 'ODD'
+  }
 
 
 
 whiteboard1()
-// whiteboard2()
+whiteboard2()
