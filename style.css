@@ -1,0 +1,17 @@
+/* body {
+  height: 100vh;
+} */
+body{min-height:100vh;}
+
+footer {
+  background-color: aqua;
+}
+
+main {
+  background-color: aquamarine;
+  flex-grow: 1;
+}
+
+header {
+  background-color: bisque;
+}
