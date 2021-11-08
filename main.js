@@ -56,13 +56,13 @@ function longestWord(sentence) {
     }
 
 function whiteboard4() {
-  let problem4 = 'Longest Word'
+  let problem4 = 'Palindrome'
   let instructions4 = 'Write a function that will take in one argument, a string. Determine if the given string is a palindrome, and return either true or false. (A palindrome is a word that\'s spelled the same both forward and backward.) For this exercise let\'s not worry about space characters.'
   document.getElementById('problem4').innerHTML = problem4
   document.getElementById('instructions4').innerHTML = instructions4
 }
 
-function palindrome() {
+function palindrome(str) {
 
 }
 
@@ -71,3 +71,4 @@ whiteboard1()
 whiteboard2()
 whiteboard3()
 whiteboard4()
+palindrome('eve')
