@@ -127,9 +127,17 @@ function factorialize(num) {
   document.getElementById('solution6').innerHTML = 'Factors for ' + num + ' are:  ' + factors
 }
 
+function whiteboard7() {
+  let problem7 = 'Make Time'
+  let instructions7 = 'Write a function called timeConvert(min) that takes the min parameter being passed and returns the number of hours and minutes the parameter converts to (ie. if num = 63 then the output should be 1:3). Separate the number of hours and minutes with a colon. If it is less than an hour you can return a 0 for hours'
+  document.getElementById('problem7').innerHTML = problem7
+  document.getElementById('instructions7').innerHTML = instructions7
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
 whiteboard4()
 whiteboard5()
 whiteboard6()
+whiteboard7()
