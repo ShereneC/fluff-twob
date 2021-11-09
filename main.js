@@ -134,6 +134,10 @@ function whiteboard7() {
   document.getElementById('instructions7').innerHTML = instructions7
 }
 
+function timeConvert(min) {
+  
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
