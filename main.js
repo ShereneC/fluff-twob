@@ -88,7 +88,43 @@ function whiteboard5() {
 }
 
 function mostCommonLetter(str) {
+  let newString = str.toLowerCase()
+  let highestLetter = ''
+  let highestLetterCount = 0
+  let newLetter = ''
+  let newLetterCount = 0 
+  for (let i = 0; i < newString.length; i++) {
+    newLetter = newString[i]
+    newLetterCount = 1
+    for (let j = i+1; j< newString.length; j++) {
+      if (newLetter === newString[j]) {
+        newLetterCount++
+      }
+      if (newLetterCount > highestLetterCount) {
+        highestLetter = newLetter
+        highestLetterCount = newLetterCount
+      }
+      // Problem: if there is a tie, it only shows the first letter with that high count.  
+    }
+  }
+  document.getElementById('solution5').innerHTML = 'Most frequent letter is ' + highestLetter + '. With a count of ' + highestLetterCount
+}
 
+function whiteboard6() {
+  let problem6 = 'Factorialize A Number'
+  let instructions6 = 'Create a function that takes a number as its argument and returns an array of all its factors.'
+  document.getElementById('problem6').innerHTML = problem6
+  document.getElementById('instructions6').innerHTML = instructions6
+}
+
+function factorialize(num) {
+  let factors = [1, parseInt(num)]
+  for (let i=2; i < num; i++) {
+    if (num % i == 0) {
+      factors.splice(factors.length-1, 0, i)
+    }
+  }
+  document.getElementById('solution6').innerHTML = 'Factors for ' + num + ' are:  ' + factors
 }
 
 whiteboard1()
@@ -96,4 +132,4 @@ whiteboard2()
 whiteboard3()
 whiteboard4()
 whiteboard5()
-mostCommonLetter('froggy')
+whiteboard6()
