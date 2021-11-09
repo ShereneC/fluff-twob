@@ -155,7 +155,11 @@ function whiteboard8() {
 }
 
 function triangulation(num1, num2, num3) {
-  console.log(num1, num2, num3)
+  if ((num1 + num2) < num3 || (num2 + num3) < num1 || (num1 + num3) < num2) {
+    document.getElementById('solution8').innerHTML = 'No, this will NOT make a triangle.'
+  } else {
+    document.getElementById('solution8').innerHTML = 'Yes, this will make a triangle.'
+  }
 }
 
 whiteboard1()
