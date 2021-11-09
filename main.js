@@ -147,6 +147,17 @@ function timeConvert(min) {
   }
 }
 
+function whiteboard8() {
+  let problem8 = 'Triangulation'
+  let instructions8 = 'Given three numbers to represent the length of each side of a triangle, determine if the three numbers can actually make a triangle or not. (hint: Triangle Inequality Theorem)'
+  document.getElementById('problem8').innerHTML = problem8
+  document.getElementById('instructions8').innerHTML = instructions8
+}
+
+function triangulation(num1, num2, num3) {
+  console.log(num1, num2, num3)
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
