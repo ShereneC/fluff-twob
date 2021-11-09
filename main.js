@@ -178,7 +178,7 @@ function whiteboard9() {
 
 function repeaterCode() {
 let message = [
-  ['eedadn'],
+['eedadn'],
 ['drvtee'],
 ['eandsr'],
 ['raavrd'],
@@ -195,6 +195,9 @@ let message = [
 ['dvrsen'],
 ['enarar'],
 ]
+for (let i=0; i<message.length; i++) {
+  console.log(message[i][0])
+}
 }
 
 
@@ -207,3 +210,4 @@ whiteboard6()
 whiteboard7()
 whiteboard8()
 whiteboard9()
+repeaterCode()
