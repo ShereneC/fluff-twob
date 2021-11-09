@@ -135,7 +135,16 @@ function whiteboard7() {
 }
 
 function timeConvert(min) {
-  
+  let hours = 0
+  for (let i = 0; min >= 60; i++) {
+    hours++
+    min-=60
+  }
+  if (min<10) {
+    document.getElementById('solution7').innerHTML = hours + ':0' + min
+  } else {
+    document.getElementById('solution7').innerHTML = hours + ':' + min
+  }
 }
 
 whiteboard1()
