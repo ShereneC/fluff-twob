@@ -170,8 +170,12 @@ function triangulation(num1, num2, num3) {
 }
 
 function whiteboard9() {
-  let problem9 = 'Triangulation'
-  let instructions9 = 'Given three numbers to represent the length of each side of a triangle, determine if the three numbers can actually make a triangle or not. (hint: Triangle Inequality Theorem)'
+  let problem9 = 'Repeater Code'
+  let instructions9 = 'You are a secret agent and Something is jamming your communications with your team. Fortunately, your signal is only partially jammed, and protocol in situations like this is to switch to a simple repetition code to get the message through.'
+
+  'In this model, the same message is sent repeatedly. You\'ve recorded the repeating message signal (your puzzle input), but the data seems quite corrupted - almost too badly to recover. Almost.'
+  
+  'All you need to do is figure out which character is most frequent for each position. '
   document.getElementById('problem9').innerHTML = problem9
   document.getElementById('instructions9').innerHTML = instructions9
 }
@@ -196,7 +200,7 @@ let message = [
 ['enarar'],
 ]
 for (let i=0; i<message.length; i++) {
-  console.log(message[i][0])
+  console.log(message[i[0]])
 }
 }
 
