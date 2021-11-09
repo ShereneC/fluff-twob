@@ -169,6 +169,35 @@ function triangulation(num1, num2, num3) {
   }
 }
 
+function whiteboard9() {
+  let problem9 = 'Triangulation'
+  let instructions9 = 'Given three numbers to represent the length of each side of a triangle, determine if the three numbers can actually make a triangle or not. (hint: Triangle Inequality Theorem)'
+  document.getElementById('problem9').innerHTML = problem9
+  document.getElementById('instructions9').innerHTML = instructions9
+}
+
+function repeaterCode() {
+let message = [
+  ['eedadn'],
+['drvtee'],
+['eandsr'],
+['raavrd'],
+['atevrs'],
+['tsrnev'],
+['sdttsa'],
+['rasrtv'],
+['nssdts'],
+['ntnada'],
+['svetve'],
+['tesnvt'],
+['vntsnd'],
+['vrdear'],
+['dvrsen'],
+['enarar'],
+]
+}
+
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -177,3 +206,4 @@ whiteboard5()
 whiteboard6()
 whiteboard7()
 whiteboard8()
+whiteboard9()
