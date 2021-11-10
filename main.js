@@ -229,10 +229,10 @@ function whiteboard10() {
 }
 
 function modifyArray(num, callback) {
-  let myArr = [1,2,3,4,5]
   myArr.push(num)
   callback()
 }
+let myArr = [1,2,3,4,5]
 
 
 
@@ -247,3 +247,6 @@ whiteboard8()
 whiteboard9()
 repeaterCode()
 whiteboard10()
+modifyArray(5, function() {
+  document.getElementById('solution10').innerHTML = 'The array is... ' + myArr
+})
