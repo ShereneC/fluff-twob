@@ -222,18 +222,17 @@ for (let j=0; j<message[0].length; j++) {
 
 function whiteboard10() {
   let problem10 = 'Explain what a callback function is and provide a simple example'
-  let instructions10 = ''
+  let instructions10 = 'The function \'modifyArray\' takes in an array and a function.  100 is pushed onto the end of the array, the array prints, and then the function executes which prints the words \'The array has been ammended\' after the array.'
   document.getElementById('problem10').innerHTML = problem10
   document.getElementById('instructions10').innerHTML = instructions10
   document.getElementById('solution10').innerHTML = 'solution goes here'
 }
 
-function modifyArray(num, callback) {
-  myArr.push(num)
+function modifyArray(arr, callback) {
+  arr.push(100)
+  document.getElementById('solution10').innerHTML = arr
   callback()
 }
-let myArr = [1,2,3,4,5]
-
 
 
 whiteboard1()
@@ -247,6 +246,6 @@ whiteboard8()
 whiteboard9()
 repeaterCode()
 whiteboard10()
-modifyArray(5, function() {
-  document.getElementById('solution10').innerHTML = 'The array is... ' + myArr
+modifyArray([1,2,3,4,5], function() {
+  document.getElementById('solution10').innerHTML += ' The array has been appended'
 })
