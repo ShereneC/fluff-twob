@@ -236,10 +236,18 @@ function modifyArray(arr, callback) {
 function whiteboard11() {
   let problem11 = 'Reverse Words'
   let instructions11 = 'Given a sentence, reverse each word in the sentence'
+  document.getElementById('problem11').innerHTML = problem11
+  document.getElementById('instructions11').innerHTML = instructions11
 }
 
 function reverseWords(str) {
-  let str2 = str.split(' ')
+  str = str.toLowerCase()
+  let str2 = str.split(' ').reverse().join(' ')
+  str2 += str2[0].toUpperCase()
+  document.getElementById('solution11').innerHTML = str2
+  // str2.reverse()
+  // document.getElementById('solution11').innerHTML = str2
+  
 }
 
 
@@ -257,3 +265,4 @@ whiteboard10()
 modifyArray([1,2,3,4,5], function() {
   document.getElementById('solution10').innerHTML += ' The array has been appended'
 })
+whiteboard11()
