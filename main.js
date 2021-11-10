@@ -225,13 +225,21 @@ function whiteboard10() {
   let instructions10 = 'The function \'modifyArray\' takes in an array and a function.  100 is pushed onto the end of the array, the array prints, and then the function executes which prints the words \'The array has been ammended\' after the array.'
   document.getElementById('problem10').innerHTML = problem10
   document.getElementById('instructions10').innerHTML = instructions10
-  document.getElementById('solution10').innerHTML = 'solution goes here'
 }
 
 function modifyArray(arr, callback) {
   arr.push(100)
   document.getElementById('solution10').innerHTML = arr
   callback()
+}
+
+function whiteboard11() {
+  let problem11 = 'Reverse Words'
+  let instructions11 = 'Given a sentence, reverse each word in the sentence'
+}
+
+function reverseWords(str) {
+  let str2 = str.split(' ')
 }
 
 
