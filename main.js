@@ -200,7 +200,20 @@ let message = [
 'enarar']
 
 for (let j=0; j<message[0].length; j++) {
+  let highestLetter = ''
+  let highestLetterCount = 0
+  let newLetter = ''
+  let newLetterCount = 0 
   for (let i=0; i<message.length; i++) {
+    newLetter = message[i][j]
+    newLetterCount = 1
+    if (newLetter === message[i][j]) {
+      newLetterCount++
+    }
+    if (newLetterCount > highestLetterCount) {
+      highestLetter = newLetter
+      highestLetterCount = newLetterCount
+    }
     console.log(message[i][j])
     // this is working thus far. Push it and see if you can use the above function to work here.
   }
