@@ -202,8 +202,9 @@ let message = [
 for (let j=0; j<message[0].length; j++) {
   let highestLetter = ''
   let highestLetterCount = 0
-  let newLetter = message[j][0]
+  let newLetter = message[0][j]
   let newLetterCount = 1
+  // I am stumped on this one.  Do I need to make a switch with 26 options??????
   for (let i=1; i<message.length; i++) {
     if (newLetter === message[i][j]) {
       newLetterCount++
@@ -212,12 +213,27 @@ for (let j=0; j<message[0].length; j++) {
       highestLetter = newLetter
       highestLetterCount = newLetterCount
     }
-    console.log(message[i][j])
   }
   console.log('highest letter ' + highestLetter)
   console.log('highest Letter Count ' + highestLetterCount)
+  document.getElementById('solution9').innerHTML = document.getElementById('solution9').innerHTML + highestLetter
 }  
 }
+
+function whiteboard10() {
+  let problem10 = 'Explain what a callback function is and provide a simple example'
+  let instructions10 = ''
+  document.getElementById('problem10').innerHTML = problem10
+  document.getElementById('instructions10').innerHTML = instructions10
+  document.getElementById('solution10').innerHTML = 'solution goes here'
+}
+
+function modifyArray(num, callback) {
+  let myArr = [1,2,3,4,5]
+  myArr.push(num)
+  callback()
+}
+
 
 
 whiteboard1()
@@ -230,3 +246,4 @@ whiteboard7()
 whiteboard8()
 whiteboard9()
 repeaterCode()
+whiteboard10()
