@@ -182,26 +182,29 @@ function whiteboard9() {
 
 function repeaterCode() {
 let message = [
-['eedadn'],
-['drvtee'],
-['eandsr'],
-['raavrd'],
-['atevrs'],
-['tsrnev'],
-['sdttsa'],
-['rasrtv'],
-['nssdts'],
-['ntnada'],
-['svetve'],
-['tesnvt'],
-['vntsnd'],
-['vrdear'],
-['dvrsen'],
-['enarar'],
-]
-for (let i=0; i<message.length; i++) {
-  console.log(message[i[0]])
-}
+'eedadn',
+'drvtee',
+'eandsr',
+'raavrd',
+'atevrs',
+'tsrnev',
+'sdttsa',
+'rasrtv',
+'nssdts',
+'ntnada',
+'svetve',
+'tesnvt',
+'vntsnd',
+'vrdear',
+'dvrsen',
+'enarar']
+
+for (let j=0; j<message[0].length; j++) {
+  for (let i=0; i<message.length; i++) {
+    console.log(message[i][j])
+    // this is working thus far. Push it and see if you can use the above function to work here.
+  }
+}  
 }
 
 
