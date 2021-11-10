@@ -202,11 +202,9 @@ let message = [
 for (let j=0; j<message[0].length; j++) {
   let highestLetter = ''
   let highestLetterCount = 0
-  let newLetter = ''
-  let newLetterCount = 0 
-  for (let i=0; i<message.length; i++) {
-    newLetter = message[i][j]
-    newLetterCount = 1
+  let newLetter = message[j][0]
+  let newLetterCount = 1
+  for (let i=1; i<message.length; i++) {
     if (newLetter === message[i][j]) {
       newLetterCount++
     }
@@ -215,8 +213,9 @@ for (let j=0; j<message[0].length; j++) {
       highestLetterCount = newLetterCount
     }
     console.log(message[i][j])
-    // this is working thus far. Push it and see if you can use the above function to work here.
   }
+  console.log('highest letter ' + highestLetter)
+  console.log('highest Letter Count ' + highestLetterCount)
 }  
 }
 
