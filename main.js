@@ -241,13 +241,12 @@ function whiteboard11() {
 }
 
 function reverseWords(str) {
+  // Would like to remove all punctuation.  Use a splice?  But must find punctuation first.
+  // str.splice()
   str = str.toLowerCase()
   let str2 = str.split(' ').reverse().join(' ')
-  str2 += str2[0].toUpperCase()
+  str2 = str2.charAt(0).toUpperCase() + str2.slice(1)
   document.getElementById('solution11').innerHTML = str2
-  // str2.reverse()
-  // document.getElementById('solution11').innerHTML = str2
-  
 }
 
 
