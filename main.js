@@ -263,10 +263,12 @@ for (let i=1; i<=num; i++) {
   } else if (num % 3 == 0) {
     document.getElementById('solution12').innerHTML += '\nFizz'
   } else if (num % 5 == 0) {
-    document.getElementById('solution12').innerHTML += '\nFizz'
+    document.getElementById('solution12').innerHTML += '\nBuzz'
   } else {
     document.getElementById('solution12').innerHTML += '\n' + num
   }
+  console.log(num)
+  i++
 }
 }
 
