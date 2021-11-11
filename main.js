@@ -258,18 +258,18 @@ function whiteboard12() {
 
 function fizzBuzz(num) {
 for (let i=1; i<=num; i++) {
-  if (num % 5 == 0 && num % 3 == 0) {
-    document.getElementById('solution12').innerHTML += '\nFizz Buzz'
+  if (i % 5 == 0 && i % 3 == 0) {
+    document.getElementById('solution12').innerHTML += '\nFizzBuzz'
     console.log('fizzbuzz')
-  } else if (num % 3 == 0) {
+  } else if (i % 3 == 0) {
     document.getElementById('solution12').innerHTML += '\nFizz'
     console.log('fizz')
-  } else if (num % 5 == 0) {
+  } else if (i % 5 == 0) {
     document.getElementById('solution12').innerHTML += '\nBuzz'
     console.log('buzz')
   } else {
-    document.getElementById('solution12').innerHTML += '\n' + num
-    console.log(num)
+    document.getElementById('solution12').innerHTML += '\n' + i
+    console.log(i)
   }
   i++
 }
