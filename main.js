@@ -260,14 +260,17 @@ function fizzBuzz(num) {
 for (let i=1; i<=num; i++) {
   if (num % 5 == 0 && num % 3 == 0) {
     document.getElementById('solution12').innerHTML += '\nFizz Buzz'
+    console.log('fizzbuzz')
   } else if (num % 3 == 0) {
     document.getElementById('solution12').innerHTML += '\nFizz'
+    console.log('fizz')
   } else if (num % 5 == 0) {
     document.getElementById('solution12').innerHTML += '\nBuzz'
+    console.log('buzz')
   } else {
     document.getElementById('solution12').innerHTML += '\n' + num
+    console.log(num)
   }
-  console.log(num)
   i++
 }
 }
