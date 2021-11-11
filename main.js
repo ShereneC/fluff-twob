@@ -256,8 +256,12 @@ function whiteboard12() {
   document.getElementById('instructions12').innerHTML = instructions12
 }
 
-function fizzBuzz() {
-
+function fizzBuzz(num) {
+for (let i=1; i<=num; i++) {
+  if (num % 5 == 0 && num % 3 == 0) {
+    document.getElementById('solution12').innerHTML += '\nFizz Buzz'
+  }
+}
 }
 
 whiteboard1()
