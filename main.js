@@ -258,20 +258,25 @@ function whiteboard12() {
 
 function fizzBuzz(num) {
 for (let i=1; i<=num; i++) {
-  if (i % 5 == 0 && i % 3 == 0) {
-    document.getElementById('solution12').innerHTML += '\nFizzBuzz'
-    console.log('fizzbuzz')
-  } else if (i % 3 == 0) {
-    document.getElementById('solution12').innerHTML += '\nFizz'
-    console.log('fizz')
-  } else if (i % 5 == 0) {
-    document.getElementById('solution12').innerHTML += '\nBuzz'
-    console.log('buzz')
-  } else {
-    document.getElementById('solution12').innerHTML += '\n' + i
-    console.log(i)
-  }
-  i++
+  // if (i % 5 == 0 && i % 3 == 0) {
+  //   document.getElementById('solution12').innerHTML += '\nFizzBuzz'
+  //   console.log('fizzbuzz')
+  // } else if (i % 3 == 0) {
+  //   document.getElementById('solution12').innerHTML += '\nFizz'
+  //   console.log('fizz')
+  // } else if (i % 5 == 0) {
+  //   document.getElementById('solution12').innerHTML += '\nBuzz'
+  //   console.log('buzz')
+  // } else {
+  //   document.getElementById('solution12').innerHTML += '\n' + i
+  //   console.log(i)
+  // }
+  // i++
+  let fizz = i % 3 == 0
+  let buzz = i % 5 == 0
+  let saying = fizz ? (buzz ? 'fizzbuzz' : 'fizz') : buzz ? 'buzz' : i
+  console.log(saying)
+  document.getElementById('solution12').innerHTML += '/n ' + saying
 }
 }
 
