@@ -260,6 +260,12 @@ function fizzBuzz(num) {
 for (let i=1; i<=num; i++) {
   if (num % 5 == 0 && num % 3 == 0) {
     document.getElementById('solution12').innerHTML += '\nFizz Buzz'
+  } else if (num % 3 == 0) {
+    document.getElementById('solution12').innerHTML += '\nFizz'
+  } else if (num % 5 == 0) {
+    document.getElementById('solution12').innerHTML += '\nFizz'
+  } else {
+    document.getElementById('solution12').innerHTML += '\n' + num
   }
 }
 }
