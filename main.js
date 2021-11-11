@@ -249,6 +249,16 @@ function reverseWords(str) {
   document.getElementById('solution11').innerHTML = str2
 }
 
+function whiteboard12() {
+  let problem12 = 'Fizz Buzz'
+  let instructions12 = 'Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5'
+  document.getElementById('problem12').innerHTML = problem12
+  document.getElementById('instructions12').innerHTML = instructions12
+}
+
+function fizzBuzz() {
+
+}
 
 whiteboard1()
 whiteboard2()
@@ -265,3 +275,4 @@ modifyArray([1,2,3,4,5], function() {
   document.getElementById('solution10').innerHTML += ' The array has been appended'
 })
 whiteboard11()
+whiteboard12()
