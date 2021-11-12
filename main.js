@@ -257,13 +257,27 @@ function whiteboard12() {
 }
 
 function fizzBuzz(num) {
-for (let i=1; i<=num; i++) {
-  let fizz = i % 3 == 0
-  let buzz = i % 5 == 0
-  let saying = fizz ? (buzz ? 'fizzbuzz' : 'fizz') : buzz ? 'buzz' : i
-  console.log(saying)
-  document.getElementById('solution12').innerHTML += '<br></br>' + saying
+  for (let i=1; i<=num; i++) {
+    let fizz = i % 3 == 0
+    let buzz = i % 5 == 0
+    let saying = fizz ? (buzz ? 'fizzbuzz' : 'fizz') : buzz ? 'buzz' : i
+    console.log(saying)
+    document.getElementById('solution12').innerHTML += '<br></br>' + saying
+  }
 }
+
+function whiteboard13() {
+  let problem13 = 'Anagrams?'
+  let instructions13 = 'Given two strings, return true if they are anagrams of one another'
+  document.getElementById('problem13').innerHTML = problem13
+  document.getElementById('instructions13').innerHTML = instructions13
+}
+
+function isAnagram() {
+  let firstStr = 'cat'
+  let secondStr = 'dog'
+  let isItAnagram = firstStr.split('').reverse().join() == secondStr ? 'Yes, it\'s an Anagram' : 'No, it\'s not an Anagram'
+  document.getElementById('solution13').innerHTML = isItAnagram
 }
 
 whiteboard1()
@@ -282,3 +296,4 @@ modifyArray([1,2,3,4,5], function() {
 })
 whiteboard11()
 whiteboard12()
+whiteboard13()
