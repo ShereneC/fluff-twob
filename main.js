@@ -276,8 +276,8 @@ function whiteboard13() {
 function isAnagram() {
   let firstStr = 'cat'
   let secondStr = 'tac'
-  let isItAnagram = firstStr.split('').reverse().join() == secondStr ? 'Yes, it\'s an Anagram' : 'No, it\'s not an Anagram'
-  console.log(firstStr.split('').reverse().join())
+  let isItAnagram = firstStr.split('').reverse().join('') == secondStr ? 'Yes, it\'s an Anagram' : 'No, it\'s not an Anagram'
+  console.log(firstStr.split('').reverse().join(''))
   console.log(isItAnagram)
   document.getElementById('solution13').innerHTML = isItAnagram
 }
