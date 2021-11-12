@@ -273,13 +273,8 @@ function whiteboard13() {
   document.getElementById('instructions13').innerHTML = instructions13
 }
 
-function isAnagram() {
-  let firstStr = 'cat'
-  let secondStr = 'tac'
-  let isItAnagram = firstStr.split('').reverse().join('') == secondStr ? 'Yes, it\'s an Anagram' : 'No, it\'s not an Anagram'
-  console.log(firstStr.split('').reverse().join(''))
-  console.log(isItAnagram)
-  document.getElementById('solution13').innerHTML = isItAnagram
+function isAnagram(firstStr, secondStr) {
+    document.getElementById('solution13').innerHTML = firstStr.split('').reverse().join('') == secondStr ? 'Yes, it\'s an Anagram' : 'No, it\'s not an Anagram'
 }
 
 whiteboard1()
@@ -299,4 +294,3 @@ modifyArray([1,2,3,4,5], function() {
 whiteboard11()
 whiteboard12()
 whiteboard13()
-isAnagram()
