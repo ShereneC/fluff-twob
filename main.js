@@ -301,6 +301,7 @@ function whiteboard15() {
 
 function trueOrFalse(statement) {
   statement ? console.log('truthy') : console.log('falsey')
+  //not sure if I can do this one - because input is text - everything is coming in truthy
 }
 
 whiteboard1()
