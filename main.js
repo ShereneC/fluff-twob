@@ -287,7 +287,7 @@ function whiteboard14() {
 function useAClosure() {
   var _counter = 0;
   return {
-    add: function (increment) { _counter += increment; },
+    add: function (increment) { _counter += parseInt(increment); console.log(_counter); this.retrieve },
     retrieve: function () { return 'The counter is currently at: ' + _counter; }
   }
 }
