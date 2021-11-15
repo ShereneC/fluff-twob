@@ -274,7 +274,17 @@ function whiteboard13() {
 }
 
 function isAnagram(firstStr, secondStr) {
-    document.getElementById('solution13').innerHTML = firstStr.split('').reverse().join('') == secondStr ? 'Yes, it\'s an Anagram' : 'No, it\'s not an Anagram'
+  document.getElementById('solution13').innerHTML = firstStr.toLowerCase().split('').sort().join('') == secondStr.toLowerCase().split('').sort().join('') ? 'Yes, it\'s an Anagram' : 'No, it\'s not an Anagram'
+}
+
+function whiteboard14() {
+  let problem14 = 'Use a closure'
+  let instructions14 = 'How would you use a closure to create a private counter?'
+  document.getElementById('problem14').innerHTML = problem14
+  document.getElementById('instructions14').innerHTML = instructions14
+}
+function useAClosure() {
+  // i'm here, but commit/push before continuing
 }
 
 whiteboard1()
