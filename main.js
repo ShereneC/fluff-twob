@@ -1,25 +1,25 @@
 function whiteboard1() {
 
-let problem1 = 'Build a Complex Object'
-let instructions1 = 'Find an item, possibly from the break room, and build an object in code. Challenge yourself to add a property of each data type, and then create a string to describe the object accessing each of those properties.'
-document.getElementById('problem1').innerHTML = problem1
-document.getElementById('instructions1').innerHTML = instructions1
+  let problem1 = 'Build a Complex Object'
+  let instructions1 = 'Find an item, possibly from the break room, and build an object in code. Challenge yourself to add a property of each data type, and then create a string to describe the object accessing each of those properties.'
+  document.getElementById('problem1').innerHTML = problem1
+  document.getElementById('instructions1').innerHTML = instructions1
 
-let dog = {
-  name: 'Rudy',
-  color: 'Orange',
-  size: 'Medium',
-  age: 11,
-  sex: 'Male',
-  altered: true
-}
+  let dog = {
+    name: 'Rudy',
+    color: 'Orange',
+    size: 'Medium',
+    age: 11,
+    sex: 'Male',
+    altered: true
+  }
 
-let solution1 = 'The dog, ' + dog.name + ', is a ' + dog.sex.toLowerCase() + ' with ' + dog.color.toLowerCase() + ' fur.'
-if (dog.altered) {
-  document.getElementById('solution1').innerHTML = solution1 + ' Dog is altered.'
-} else {
-  document.getElementById('solution1').innerHTML = solution1 + ' Dog is intact.'
-}
+  let solution1 = 'The dog, ' + dog.name + ', is a ' + dog.sex.toLowerCase() + ' with ' + dog.color.toLowerCase() + ' fur.'
+  if (dog.altered) {
+    document.getElementById('solution1').innerHTML = solution1 + ' Dog is altered.'
+  } else {
+    document.getElementById('solution1').innerHTML = solution1 + ' Dog is intact.'
+  }
 }
 
 function whiteboard2() {
@@ -30,30 +30,30 @@ function whiteboard2() {
 }
 
 function evenOrOdd(num) {
-    if ( num % 2 == 0) {
-      document.getElementById('solution2').innerHTML = 'EVEN'
-          } else
+  if (num % 2 == 0) {
+    document.getElementById('solution2').innerHTML = 'EVEN'
+  } else
     document.getElementById('solution2').innerHTML = 'ODD'
 }
 
 function whiteboard3() {
-    let problem3 = 'Longest Word'
-    let instructions3 = 'Write a function that will take in a single argument, a string. The string will be a sentence and your function will return the longest word in that sentence. If there are multiple words tied for longest word, then return the word that appears in the sentence first.'
-    document.getElementById('problem3').innerHTML = problem3
-    document.getElementById('instructions3').innerHTML = instructions3
+  let problem3 = 'Longest Word'
+  let instructions3 = 'Write a function that will take in a single argument, a string. The string will be a sentence and your function will return the longest word in that sentence. If there are multiple words tied for longest word, then return the word that appears in the sentence first.'
+  document.getElementById('problem3').innerHTML = problem3
+  document.getElementById('instructions3').innerHTML = instructions3
 }
 
 function longestWord(sentence) {
-    let arr = sentence.split(' ')
-    let longest = ''
-    for (let i=0; i < arr.length; i++) {
-      if (arr[i].length > longest.length) {
-        longest = arr[i]
-      }
+  let arr = sentence.split(' ')
+  let longest = ''
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > longest.length) {
+      longest = arr[i]
     }
-    
-    document.getElementById('solution3').innerHTML = longest
-    }
+  }
+
+  document.getElementById('solution3').innerHTML = longest
+}
 
 function whiteboard4() {
   let problem4 = 'Palindrome'
@@ -65,19 +65,19 @@ function whiteboard4() {
 function palindrome(str) {
   let firstHalf = ''
   let secondHalf = ''
-for (let i=0; i < str.length/2; i++) {
-  firstHalf += str[i]
-  console.log('firsthalf is ' + firstHalf)
-}
-for (let i=str.length-1; i > (str.length/2) -1; i--) {
-  secondHalf += str[i]
-  console.log('secondthalf is ' + secondHalf)
-}
-if (firstHalf == secondHalf) {
-  document.getElementById('solution4').innerHTML = 'This word is a Palindrome.'
-} else {
-  document.getElementById('solution4').innerHTML = 'This word is not a Palindrome'
-}
+  for (let i = 0; i < str.length / 2; i++) {
+    firstHalf += str[i]
+    console.log('firsthalf is ' + firstHalf)
+  }
+  for (let i = str.length - 1; i > (str.length / 2) - 1; i--) {
+    secondHalf += str[i]
+    console.log('secondthalf is ' + secondHalf)
+  }
+  if (firstHalf == secondHalf) {
+    document.getElementById('solution4').innerHTML = 'This word is a Palindrome.'
+  } else {
+    document.getElementById('solution4').innerHTML = 'This word is not a Palindrome'
+  }
 }
 
 function whiteboard5() {
@@ -92,11 +92,11 @@ function mostCommonLetter(str) {
   let highestLetter = ''
   let highestLetterCount = 0
   let newLetter = ''
-  let newLetterCount = 0 
+  let newLetterCount = 0
   for (let i = 0; i < newString.length; i++) {
     newLetter = newString[i]
     newLetterCount = 1
-    for (let j = i+1; j< newString.length; j++) {
+    for (let j = i + 1; j < newString.length; j++) {
       if (newLetter === newString[j]) {
         newLetterCount++
       }
@@ -119,9 +119,9 @@ function whiteboard6() {
 
 function factorialize(num) {
   let factors = [1, parseInt(num)]
-  for (let i=2; i < num; i++) {
+  for (let i = 2; i < num; i++) {
     if (num % i == 0) {
-      factors.splice(factors.length-1, 0, i)
+      factors.splice(factors.length - 1, 0, i)
     }
   }
   document.getElementById('solution6').innerHTML = 'Factors for ' + num + ' are:  ' + factors
@@ -138,9 +138,9 @@ function timeConvert(min) {
   let hours = 0
   for (let i = 0; min >= 60; i++) {
     hours++
-    min-=60
+    min -= 60
   }
-  if (min<10) {
+  if (min < 10) {
     document.getElementById('solution7').innerHTML = hours + ':0' + min
   } else {
     document.getElementById('solution7').innerHTML = hours + ':' + min
@@ -161,7 +161,7 @@ function triangulation(num1, num2, num3) {
   if ((num1 + num2) < num3 || (num2 + num3) < num1 || (num1 + num3) < num2) {
     console.log(num1, num2, num3)
     console.log(num1 + num2, num3)
-    console.log(num2+num3, num1)
+    console.log(num2 + num3, num1)
     console.log(num1 + num3, num2)
     document.getElementById('solution8').innerHTML = 'No, this will NOT make a triangle.'
   } else {
@@ -174,50 +174,50 @@ function whiteboard9() {
   let instructions9 = 'You are a secret agent and Something is jamming your communications with your team. Fortunately, your signal is only partially jammed, and protocol in situations like this is to switch to a simple repetition code to get the message through.'
 
   'In this model, the same message is sent repeatedly. You\'ve recorded the repeating message signal (your puzzle input), but the data seems quite corrupted - almost too badly to recover. Almost.'
-  
+
   'All you need to do is figure out which character is most frequent for each position. '
   document.getElementById('problem9').innerHTML = problem9
   document.getElementById('instructions9').innerHTML = instructions9
 }
 
 function repeaterCode() {
-let message = [
-'eedadn',
-'drvtee',
-'eandsr',
-'raavrd',
-'atevrs',
-'tsrnev',
-'sdttsa',
-'rasrtv',
-'nssdts',
-'ntnada',
-'svetve',
-'tesnvt',
-'vntsnd',
-'vrdear',
-'dvrsen',
-'enarar']
+  let message = [
+    'eedadn',
+    'drvtee',
+    'eandsr',
+    'raavrd',
+    'atevrs',
+    'tsrnev',
+    'sdttsa',
+    'rasrtv',
+    'nssdts',
+    'ntnada',
+    'svetve',
+    'tesnvt',
+    'vntsnd',
+    'vrdear',
+    'dvrsen',
+    'enarar']
 
-for (let j=0; j<message[0].length; j++) {
-  let highestLetter = ''
-  let highestLetterCount = 0
-  let newLetter = message[0][j]
-  let newLetterCount = 1
-  // I am stumped on this one.  Do I need to make a switch with 26 options??????
-  for (let i=1; i<message.length; i++) {
-    if (newLetter === message[i][j]) {
-      newLetterCount++
+  for (let j = 0; j < message[0].length; j++) {
+    let highestLetter = ''
+    let highestLetterCount = 0
+    let newLetter = message[0][j]
+    let newLetterCount = 1
+    // I am stumped on this one.  Do I need to make a switch with 26 options??????
+    for (let i = 1; i < message.length; i++) {
+      if (newLetter === message[i][j]) {
+        newLetterCount++
+      }
+      if (newLetterCount > highestLetterCount) {
+        highestLetter = newLetter
+        highestLetterCount = newLetterCount
+      }
     }
-    if (newLetterCount > highestLetterCount) {
-      highestLetter = newLetter
-      highestLetterCount = newLetterCount
-    }
+    console.log('highest letter ' + highestLetter)
+    console.log('highest Letter Count ' + highestLetterCount)
+    document.getElementById('solution9').innerHTML = document.getElementById('solution9').innerHTML + highestLetter
   }
-  console.log('highest letter ' + highestLetter)
-  console.log('highest Letter Count ' + highestLetterCount)
-  document.getElementById('solution9').innerHTML = document.getElementById('solution9').innerHTML + highestLetter
-}  
 }
 
 function whiteboard10() {
@@ -257,7 +257,7 @@ function whiteboard12() {
 }
 
 function fizzBuzz(num) {
-  for (let i=1; i<=num; i++) {
+  for (let i = 1; i <= num; i++) {
     let fizz = i % 3 == 0
     let buzz = i % 5 == 0
     let saying = fizz ? (buzz ? 'fizzbuzz' : 'fizz') : buzz ? 'buzz' : i
@@ -274,7 +274,18 @@ function whiteboard13() {
 }
 
 function isAnagram(firstStr, secondStr) {
-    document.getElementById('solution13').innerHTML = firstStr.split('').reverse().join('') == secondStr ? 'Yes, it\'s an Anagram' : 'No, it\'s not an Anagram'
+  document.getElementById('solution13').innerHTML = firstStr.split('').reverse().join('') == secondStr ? 'Yes, it\'s an Anagram' : 'No, it\'s not an Anagram'
+}
+
+function whiteboard14() {
+  let problem14 = 'Use a closure'
+  let instructions14 = 'How would you use a closure to create a private counter?'
+  document.getElementById('problem14').innerHTML = problem14
+  document.getElementById('instructions14').innerHTML = instructions14
+}
+
+function useAClosure() {
+
 }
 
 whiteboard1()
@@ -288,7 +299,7 @@ whiteboard8()
 whiteboard9()
 repeaterCode()
 whiteboard10()
-modifyArray([1,2,3,4,5], function() {
+modifyArray([1, 2, 3, 4, 5], function () {
   document.getElementById('solution10').innerHTML += ' The array has been appended'
 })
 whiteboard11()
