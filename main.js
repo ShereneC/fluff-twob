@@ -292,6 +292,16 @@ function useAClosure() {
   }
 }
 
+function whiteboard15() {
+  let problem15 = 'Force Non-Boolean to Boolean'
+  let instructions15 = 'When forced would it be truthy or falsey?'
+  document.getElementById('problem15').innerHTML = problem15
+  document.getElementById('instructions15').innerHTML = instructions15
+}
+
+function trueOrFalse(statement) {
+  statement ? console.log('truthy') : console.log('falsey')
+}
 
 whiteboard1()
 whiteboard2()
@@ -312,4 +322,4 @@ whiteboard12()
 whiteboard13()
 whiteboard14()
 var c = useAClosure();
-// document.getElementById('solution14').innerHTML = c.retrieve();
+whiteboard15()
