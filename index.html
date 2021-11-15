@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
   <title>Fluff-Two</title>
 </head>
+
 <body class="container-fluid vh-100 d-flex flex-column">
   <header class="row justify-content-center">
     <h1>Fluff-Two</h1>
@@ -17,17 +19,18 @@
   <main class="row">
     <div class="col-12 bg-beige shadow rounded my-2">
       <h4 id="problem1"></h4>
-<h5 id="instructions1"></h5>
-<h3 id="solution1"></h3>
+      <h5 id="instructions1"></h5>
+      <h3 id="solution1"></h3>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
       <h4 id="problem2"></h4>
-<h5 id="instructions2"></h5>
-<form action="submit">
-  <input name="inputNumber" id="inputNumber" type="number">
-  <button type="button" class="btn btn-primary" onclick="evenOrOdd(document.getElementById('inputNumber').value)">Submit Number</button>
-</form>
-<h3 id="solution2"></h3>
+      <h5 id="instructions2"></h5>
+      <form action="submit">
+        <input name="inputNumber" id="inputNumber" type="number">
+        <button type="button" class="btn btn-primary"
+          onclick="evenOrOdd(document.getElementById('inputNumber').value)">Submit Number</button>
+      </form>
+      <h3 id="solution2"></h3>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
       <h4>Train Station Problem</h4>
@@ -44,7 +47,8 @@
       <h4 id="problem4"></h4>
       <h5 id="instructions4"></h5>
       <input type="text" id="inputWord" name="inputWord">
-      <button type="button" class="btn btn-primary" onclick="palindrome(document.getElementById('inputWord').value)">Submit Word</button>
+      <button type="button" class="btn btn-primary"
+        onclick="palindrome(document.getElementById('inputWord').value)">Submit Word</button>
       <h4 id="solution4"></h4>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
@@ -74,7 +78,9 @@
       <input type="number" id="num1" name="num1">
       <input type="number" id="num2" name="num2">
       <input type="number" id="num3" name="num3">
-      <button onclick="triangulation(document.getElementById('num1').value, document.getElementById('num2').value, document.getElementById('num3').value)">Submit Numbers</button>
+      <button
+        onclick="triangulation(document.getElementById('num1').value, document.getElementById('num2').value, document.getElementById('num3').value)">Submit
+        Numbers</button>
       <h4 id="solution8"></h4>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
@@ -91,14 +97,16 @@
       <h4 id="problem11"></h4>
       <h5 id="instructions11"></h5>
       <input type="text" id="reverseSentence" name="reverseSentence">
-      <button type="button" class="btn btn-primary" onclick="reverseWords(document.getElementById('reverseSentence').value)">Submit Sentence</button>
+      <button type="button" class="btn btn-primary"
+        onclick="reverseWords(document.getElementById('reverseSentence').value)">Submit Sentence</button>
       <h4 id="solution11"></h4>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
       <h4 id="problem12"></h4>
       <h5 id="instructions12"></h5>
       <input type="number" id="fbNum" name="fbNum">
-      <button type="button" class="btn btn-primary" onclick="fizzBuzz(document.getElementById('fbNum').value)">Submit Number</button>
+      <button type="button" class="btn btn-primary" onclick="fizzBuzz(document.getElementById('fbNum').value)">Submit
+        Number</button>
       <h6 id="solution12"></h6>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
@@ -106,8 +114,16 @@
       <h5 id="instructions13"></h5>
       <input type="text" id="str1Anagram" id="str1Anagram">
       <input type="text" id="str2Anagram" id="str2Anagram">
-      <button type="button" class="btn btn-primary" onclick="isAnagram(document.getElementById('str1Anagram').value,document.getElementById('str2Anagram').value)">Submit Strings</button>
+      <button type="button" class="btn btn-primary"
+        onclick="isAnagram(document.getElementById('str1Anagram').value,document.getElementById('str2Anagram').value)">Submit
+        Strings</button>
       <h4 id="solution13"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem14"></h4>
+      <h5 id="instructions14"></h5>
+
+      <h4 id="solution14"></h4>
     </div>
   </main>
   <footer class="row">
@@ -115,4 +131,5 @@
   </footer>
   <script src="main.js"></script>
 </body>
+
 </html>
