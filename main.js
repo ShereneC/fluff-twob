@@ -285,8 +285,13 @@ function whiteboard14() {
 }
 
 function useAClosure() {
-
+  var _counter = 0;
+  return {
+    add: function (increment) { _counter += increment; },
+    retrieve: function () { return 'The counter is currently at: ' + _counter; }
+  }
 }
+
 
 whiteboard1()
 whiteboard2()
@@ -306,3 +311,7 @@ whiteboard11()
 whiteboard12()
 whiteboard13()
 whiteboard14()
+var c = useAClosure();
+c.add(5);
+c.add(9);
+document.getElementById('solution14').innerHTML = c.retrieve();
