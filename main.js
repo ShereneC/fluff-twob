@@ -312,6 +312,4 @@ whiteboard12()
 whiteboard13()
 whiteboard14()
 var c = useAClosure();
-c.add(5);
-c.add(9);
 document.getElementById('solution14').innerHTML = c.retrieve();
