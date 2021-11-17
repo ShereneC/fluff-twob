@@ -9,12 +9,12 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
-  <title>Fluff-Two</title>
+  <title>Whiteboard Challenges</title>
 </head>
 
 <body class="container-fluid vh-100 d-flex flex-column">
   <header class="row justify-content-center">
-    <h1>Fluff-Two</h1>
+    <h1>Whiteboard Challenges</h1>
   </header>
   <main class="row">
     <div class="col-12 bg-beige shadow rounded my-2">
@@ -149,11 +149,13 @@
       <input type="number" id="fibLength" name="fibLength">
       <button type="button" class="btn btn-primary"
         onclick="fibonacci(document.getElementById('fibLength').value)">Submit Length</button>
-      <h4 id="solution17"></h4>
+      <h4 id="solution17" class="text-break"></h4>
     </div>
   </main>
-  <footer class="row">
+  <footer class="row flex-column">
     <h6>created by Sherene</h6>
+    <p>Sources: www.sitepoint.com/5-common-coding-interview-challenges </p>
+    <p>www.fullstack.cafe/blog/javascript-code-interviw-questions</p>
   </footer>
   <script src="main.js"></script>
 </body>
