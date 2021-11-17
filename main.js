@@ -330,6 +330,19 @@ function whiteboard17() {
   document.getElementById('instructions17').innerHTML = instructions17
 }
 
+function fibonacci() {
+  num1 = 0
+  num2 = 1
+  numarr = [0, 1]
+  for (let i = 0; i <= 10; i++) {
+    num3 = num1 + num2
+    numarr.push(num3)
+    num1 = num2
+    num2 = num3
+    console.log(numarr)
+  }
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -352,3 +365,4 @@ var c = useAClosure();
 whiteboard15()
 whiteboard16()
 whiteboard17()
+fibonacci()
