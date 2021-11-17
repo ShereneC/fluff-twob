@@ -304,6 +304,13 @@ function trueOrFalse(statement) {
   //not sure if I can do this one - because input is text - everything is coming in truthy
 }
 
+function whiteboard16() {
+  let problem16 = 'Find the vowels'
+  let instructions16 = 'Write a function that takes a string as argument and returns the number of vowels contained in that string.'
+  document.getElementById('problem16').innerHTML = problem16
+  document.getElementById('instructions16').innerHTML = instructions16
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -324,3 +331,4 @@ whiteboard13()
 whiteboard14()
 var c = useAClosure();
 whiteboard15()
+whiteboard16()
