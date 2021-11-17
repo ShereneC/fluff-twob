@@ -343,6 +343,13 @@ function fibonacci(len) {
   document.getElementById('solution17').innerHTML += numarr
 }
 
+function whiteboard18() {
+  let problem18 = 'Event delegation'
+  let instructions18 = 'If we take a simple todo list as an example, the interviewer may tell you that they want an action to occur when a user clicks one of the list items. And they want you to implement this functionality in JavaScript assuming the following HTML code:'
+  document.getElementById('problem18').innerHTML = problem18
+  document.getElementById('instructions18').innerHTML = instructions18
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -365,4 +372,5 @@ var c = useAClosure();
 whiteboard15()
 whiteboard16()
 whiteboard17()
+whiteboard18()
 
