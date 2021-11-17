@@ -311,6 +311,17 @@ function whiteboard16() {
   document.getElementById('instructions16').innerHTML = instructions16
 }
 
+function findVowels(string) {
+  string = string.toLowerCase()
+  let numVowel = 0
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == 'a' || 'i' || 'e' || 'o' || 'u') {
+      numVowel++
+    }
+  }
+  document.getElementById('solution16').innerHTML = 'There are ' + numVowel + ' vowel(s) in your string.'
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
