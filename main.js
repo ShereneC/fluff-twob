@@ -319,10 +319,15 @@ function findVowels(string) {
     if (vowels.includes(char)) {
       numVowel++
     }
-    console.log(char)
-    console.log(numVowel)
   }
   document.getElementById('solution16').innerHTML = 'There are ' + numVowel + ' vowel(s) in your string.'
+}
+
+function whiteboard17() {
+  let problem17 = 'Fibonacci'
+  let instructions17 = 'A Fibonacci sequence is an ordering of numbers where each number is the sum of the preceding two.  For example, the first ten numbers of the Fibonacci sequence are: 0,1,1,2,3,5,8,13,21,34.'
+  document.getElementById('problem17').innerHTML = problem17
+  document.getElementById('instructions17').innerHTML = instructions17
 }
 
 whiteboard1()
@@ -346,3 +351,4 @@ whiteboard14()
 var c = useAClosure();
 whiteboard15()
 whiteboard16()
+whiteboard17()
