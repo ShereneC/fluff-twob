@@ -294,7 +294,7 @@ function useAClosure() {
 
 function whiteboard15() {
   let problem15 = 'Force Non-Boolean to Boolean'
-  let instructions15 = 'When forced would it be truthy or falsey?'
+  let instructions15 = 'When forced would it be truthy or falsey? \n This one does not work - input type is text so everything except blank input comes across as truthy.  Can\'t figure out how to make it see the input text as code and not just as a string. Parse? or is that just for numbers?'
   document.getElementById('problem15').innerHTML = problem15
   document.getElementById('instructions15').innerHTML = instructions15
 }
