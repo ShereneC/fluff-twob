@@ -348,6 +348,18 @@ function whiteboard18() {
   let instructions18 = 'If we take a simple todo list as an example, the interviewer may tell you that they want an action to occur when a user clicks one of the list items. And they want you to implement this functionality in JavaScript assuming the following HTML code:'
   document.getElementById('problem18').innerHTML = problem18
   document.getElementById('instructions18').innerHTML = instructions18
+
+  // didn't do this one on my own - had to copy it.  I understand it all, except 'DOMContentLoaded', function ()
+  document.addEventListener('DOMContentLoaded', function () {
+    let app = document.getElementById('todo-app');
+    let items = app.getElementsByClassName('item');
+    //attach event listener to each item
+    for (let item of items) {
+      item.addEventListener('click', function () {
+        alert('you clicked on item: ' + item.innerHTML);
+      })
+    }
+  });
 }
 
 
@@ -375,13 +387,4 @@ whiteboard15()
 whiteboard16()
 whiteboard17()
 whiteboard18()
-document.addEventListener('DOMContentLoaded', function () {
-  let app = document.getElementById('todo-app');
-  let items = app.getElementsByClassName('item');
-  //attach event listener to each item
-  for (let item of items) {
-    item.addEventListener('click', function () {
-      alert('you clicked on item: ' + item.innerHTML);
-    })
-  }
-});
+
