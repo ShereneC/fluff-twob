@@ -315,9 +315,11 @@ function findVowels(string) {
   string = string.toLowerCase()
   let numVowel = 0
   for (let i = 0; i < string.length; i++) {
-    if (string[i] == 'a' || 'i' || 'e' || 'o' || 'u') {
-      numVowel++
-    }
+    // if (string[i] === 'e' || 'o') Putting ors in here is not working, not sure why, going to have to make this longer code or change strategy. 
+    numVowel++
+
+    console.log(string[i])
+    console.log(numVowel)
   }
   document.getElementById('solution16').innerHTML = 'There are ' + numVowel + ' vowel(s) in your string.'
 }
