@@ -380,6 +380,13 @@ function whiteboard19() {
   });
 }
 
+function whiteboard20() {
+  let problem20 = 'Using a Closure Within a Loop'
+  let instructions20 = 'Write a function that will loop through a list of integers and print the index of each element after a 3 second delay.'
+  document.getElementById('problem20').innerHTML = problem20
+  document.getElementById('instructions20').innerHTML = instructions20
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -404,3 +411,4 @@ whiteboard16()
 whiteboard17()
 whiteboard18()
 whiteboard19()
+whiteboard20()
