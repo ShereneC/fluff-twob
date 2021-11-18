@@ -388,13 +388,14 @@ function whiteboard20() {
 }
 
 function closureLoop() {
+  //looks like I did this correctly, but didn't get the values of the numbers to come into the numList array from the DOM.  Could use some help on that.  But it did get the length of 4.
   return {
     printIndex: function (numList) {
+      console.log(numList)
       for (let i = 0; i < numList.length; i++) {
         setTimeout(function () {
           document.getElementById('solution20').innerHTML += i
         }, 3000)
-        i++
       }
     }
   }
