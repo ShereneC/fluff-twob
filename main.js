@@ -387,6 +387,16 @@ function whiteboard20() {
   document.getElementById('instructions20').innerHTML = instructions20
 }
 
+function closureLoop() {
+  return {
+    printIndex: function (numList) {
+      for (let i = 0; i < numList.length; i++) {
+        document.getElementById('solution20').innerHTML += i
+      }
+    }
+  }
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -412,3 +422,4 @@ whiteboard17()
 whiteboard18()
 whiteboard19()
 whiteboard20()
+var l = closureLoop();
