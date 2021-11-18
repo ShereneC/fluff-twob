@@ -370,18 +370,15 @@ function whiteboard19() {
 
   // didn't do this one on my own - had to copy it.  I understand it all, except 'DOMContentLoaded', function ()
   document.addEventListener('DOMContentLoaded', function () {
-    let app = document.getElementById('todo-app');
-    let items = app.getElementsByClassName('item');
-    //attach event listener to each item
-    for (let item of items) {
-      item.addEventListener('click', function () {
-        alert('you clicked on item: ' + item.innerHTML);
-      })
-    }
+    let app = document.getElementById('todo-app2');
+    app.addEventListener('click', function (e) {
+      if (e.target && e.target.nodeName === 'LI') {
+        let item = e.target;
+        alert('you clicked on item: ' + item.innerHTML)
+      }
+    })
   });
 }
-
-
 
 whiteboard1()
 whiteboard2()
@@ -406,4 +403,4 @@ whiteboard15()
 whiteboard16()
 whiteboard17()
 whiteboard18()
-
+whiteboard19()
