@@ -410,9 +410,16 @@ function whiteboard21() {
   document.getElementById('instructions21').innerHTML = instructions21
 }
 
-function buyOrSell() {
 
+let prices = [7, 1, 5, 3, 6, 4]
+var maxProfit = function (prices) {
+  for (let i = 0; i < length - 2; i++) {
+    let firstNum = prices[i]
+    let secondNum = prices[i + 1]
+    console.log(firstNum, secondNum)
+  }
 }
+
 
 whiteboard1()
 whiteboard2()
@@ -441,3 +448,4 @@ whiteboard19()
 whiteboard20()
 var l = closureLoop();
 whiteboard21()
+console.log(maxProfit)
