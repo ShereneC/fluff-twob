@@ -391,7 +391,10 @@ function closureLoop() {
   return {
     printIndex: function (numList) {
       for (let i = 0; i < numList.length; i++) {
-        document.getElementById('solution20').innerHTML += i
+        setTimeout(function () {
+          document.getElementById('solution20').innerHTML += i
+        }, 3000)
+        i++
       }
     }
   }
