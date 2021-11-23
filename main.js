@@ -411,10 +411,17 @@ function whiteboard21() {
 
 // let prices = [7, 1, 5, 3, 6, 4]
 function maxProfit(prices) {
+  let diff = 0
+  let lowNum = 0
   for (let i = 0; i < prices.length - 2; i++) {
     let firstNum = prices[i]
     let secondNum = prices[i + 1]
-    console.log(firstNum, secondNum)
+    if (firstNum - secondNum > diff) {
+      diff = firstNum - secondNum
+      lowNum = secondNum
+    }
+
+    console.log(diff, lowNum)
   }
 }
 
