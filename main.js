@@ -408,10 +408,10 @@ function whiteboard21() {
   document.getElementById('instructions21').innerHTML = instructions21
 }
 
-
 // let prices = [7, 1, 5, 3, 6, 4]
 function maxProfit(prices) {
   //first find the lowest number (lowNum)
+  // um, actually this plan is too simplified, because you might not buy it at its absolute lowest or sell it at its absolute highest,so this is trash....
   let lowNum = prices[0]
   let lowNumIndex = 0
   let highNum = prices[0]
