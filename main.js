@@ -415,6 +415,7 @@ function maxProfit(prices) {
   let lowNum = 0
   let lownumIndex = 0
   let highNum = 0
+  let highNumIndex = 0
   for (let i = 0; i < prices.length - 2; i++) {
     let firstNum = prices[i]
     let secondNum = prices[i + 1]
@@ -424,16 +425,19 @@ function maxProfit(prices) {
       lownumIndex = i + 1
     }
   }
-  // console.log(lowNum, lownumIndex)
   for (let j = lownumIndex; j < prices.length - 2; j++) {
     let firstNum = prices[lownumIndex]
     let secondNum = prices[j + 1]
     if (secondNum > firstNum) {
       highNum = secondNum
+      highNumIndex = prices[j + 1]
     }
   }
-  console.log(lowNum, lownumIndex, highNum)
-  console.log('MaxProfits are highnum - lownum, ' + (parseInt(highNum) - parseInt(lowNum)))
+  if (parseInt(highNum) - parseInt(lowNum) <= 0) {
+    document.getElementById('solution21').innerHTML = 'No good time to buy/sell'
+  } else {
+    document.getElementById('solution21').innerHTML = 'Buy at day ' + lownumIndex + ' and sell at day ' + highNumIndex + ' for a max profit of ' + (parseInt(highNum) - parseInt(lowNum))
+  }
 }
 
 
@@ -464,4 +468,4 @@ whiteboard19()
 whiteboard20()
 var l = closureLoop();
 whiteboard21()
-maxProfit([7, 1, 5, 3, 6, 4])
+maxProfit([8, 20, 11, 46, 19, 5])
