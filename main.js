@@ -435,6 +435,13 @@ function maxProfit(prices) {
 
 }
 
+function whiteboard22() {
+  let problem22 = 'Two Sums'
+  let instructions22 = 'Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.'
+  document.getElementById('problem22').innerHTML = problem22
+  document.getElementById('instructions22').innerHTML = instructions22
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -461,6 +468,8 @@ whiteboard18()
 whiteboard19()
 whiteboard20()
 var l = closureLoop();
+// NOTE 21 sucks - need to move on and revisit later.
 whiteboard21()
 maxProfit([8, 20, 11, 46, 19, 5])
 // [8, 20, 11, 46, 19, 5]
+whiteboard22()
