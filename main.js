@@ -455,6 +455,13 @@ function twoSums(numBers, target) {
   return
 }
 
+function whiteboard23() {
+  let problem23 = 'Contains Duplicate'
+  let instructions23 = 'Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct. numBers=[2, 7, 11, 15, 25, 3, 4, 9, 10]'
+  document.getElementById('problem23').innerHTML = problem23
+  document.getElementById('instructions23').innerHTML = instructions23
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
