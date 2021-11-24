@@ -437,7 +437,7 @@ function maxProfit(prices) {
 
 function whiteboard22() {
   let problem22 = 'Two Sums'
-  let instructions22 = 'Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.'
+  let instructions22 = 'Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order. numBers=[2, 7, 11, 15, 25, 3, 4, 9, 10] and target is 19.'
   document.getElementById('problem22').innerHTML = problem22
   document.getElementById('instructions22').innerHTML = instructions22
 }
@@ -486,4 +486,5 @@ whiteboard21()
 maxProfit([8, 20, 11, 46, 19, 5])
 // [8, 20, 11, 46, 19, 5]
 whiteboard22()
-twoSums([2, 7, 11, 15], 9)
+twoSums([2, 7, 11, 15, 25, 3, 4, 9, 10], 19)
+whiteboard23()
