@@ -450,7 +450,7 @@ function twoSums(numBers, target) {
       }
     }
   }
-
+  return 0
 }
 
 whiteboard1()
@@ -484,4 +484,4 @@ whiteboard21()
 maxProfit([8, 20, 11, 46, 19, 5])
 // [8, 20, 11, 46, 19, 5]
 whiteboard22()
-console.log(twoSums([2, 7, 11, 15], 26))
+console.log(twoSums([2, 7, 11, 15], 10))
