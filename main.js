@@ -462,6 +462,15 @@ function whiteboard23() {
   document.getElementById('instructions23').innerHTML = instructions23
 }
 
+function containsDuplicate(numBers) {
+  for (let i = 0; i < numBers.length - 1; i++) {
+    for (let j = 1; j < numBers.length; i++) {
+      let saying = numBers[i] == numBers[j] ? false : true
+    }
+  }
+  return saying
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -495,3 +504,4 @@ maxProfit([8, 20, 11, 46, 19, 5])
 whiteboard22()
 twoSums([2, 7, 11, 15, 25, 3, 4, 9, 10], 19)
 whiteboard23()
+console.log(containsDuplicate([2, 7, 11, 15, 25, 3, 2, 9, 10]))
