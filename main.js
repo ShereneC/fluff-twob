@@ -446,11 +446,13 @@ function twoSums(numBers, target) {
   for (let i = 0; i < numBers.length - 1; i++) {
     for (let j = i + 1; j < numBers.length; j++) {
       if (numBers[i] + numBers[j] == target) {
-        return '[' + i + ',' + j + ']'
+        document.getElementById('solution22').innerHTML = '[' + i + ',' + j + ']'
+        return
       }
     }
   }
-  return 0
+  document.getElementById('solution22').innerHTML = 0
+  return
 }
 
 whiteboard1()
@@ -484,4 +486,4 @@ whiteboard21()
 maxProfit([8, 20, 11, 46, 19, 5])
 // [8, 20, 11, 46, 19, 5]
 whiteboard22()
-console.log(twoSums([2, 7, 11, 15], 10))
+twoSums([2, 7, 11, 15], 9)
