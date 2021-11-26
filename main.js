@@ -457,7 +457,7 @@ function twoSums(numBers, target) {
 
 function whiteboard23() {
   let problem23 = 'Contains Duplicate'
-  let instructions23 = 'Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct. numBers=[2, 7, 11, 15, 25, 3, 4, 9, 10]'
+  let instructions23 = 'Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct. numBers=[2, 7, 11, 15, 25, 8, 3, 5, 10]'
   document.getElementById('problem23').innerHTML = problem23
   document.getElementById('instructions23').innerHTML = instructions23
 }
@@ -465,14 +465,13 @@ function whiteboard23() {
 function containsDuplicate(numBers) {
   for (let i = 0; i < numBers.length - 1; i++) {
     for (let j = i + 1; j < numBers.length; j++) {
-      console.log(numBers[i], numBers[j])
       if (numBers[i] === numBers[j]) {
-        console.log('There are equal numbers' + numBers[i] + ',' + numBers[j])
+        document.getElementById('solution23').innerHTML = 'There are equal numbers' + numBers[i] + ',' + numBers[j]
         return
       }
     }
   }
-  console.log('There are not equal numbers')
+  document.getElementById('solution23').innerHTML = 'There are no duplicates'
 }
 
 whiteboard1()
@@ -508,5 +507,5 @@ maxProfit([8, 20, 11, 46, 19, 5])
 whiteboard22()
 twoSums([2, 7, 11, 15, 25, 3, 4, 9, 10], 19)
 whiteboard23()
-containsDuplicate([2, 7, 11, 15, 25, 7, 3, 5, 10])
+containsDuplicate([2, 7, 11, 15, 25, 8, 3, 5, 10])
 // whiteboard24()
