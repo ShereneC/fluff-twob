@@ -475,22 +475,22 @@ function containsDuplicate(numBers) {
 }
 
 function whiteboard24() {
-  let problem24 = 'Are Cirly Braces Matched'
+  let problem24 = 'Are Curly Braces Matched'
   let instructions24 = 'Write a function areCurlyBracesMatched that takes in a string s containing only { and/or } and returns true if s is properly matched, and false otherwise. A string s is considered properly matched if the string is empty or if every open brace has a corresponding close brace.'
   document.getElementById('problem24').innerHTML = problem24
   document.getElementById('instructions24').innerHTML = instructions24
 }
 
 function areCurleyBracesMatched(braces) {
-  bracesArr = braces.split
+  bracesArr = braces.split('')
   leftBrace = 0
   rightBrace = 0
-  console.log(bracesArr)
   for (let i = 0; i < bracesArr.length; i++) {
-    console.log(i)
-    bracesArr[i] == '{' ? console.log('left') : console.log('right')
+    bracesArr[i] == '{' ? leftBrace++ : rightBrace++
   }
-
+  console.log(leftBrace)
+  console.log(rightBrace)
+  document.getElementById('solution24').innerHTML = (leftBrace == rightBrace ? true : false)
 }
 whiteboard1()
 whiteboard2()
@@ -527,4 +527,4 @@ twoSums([2, 7, 11, 15, 25, 3, 4, 9, 10], 19)
 whiteboard23()
 containsDuplicate([2, 7, 11, 15, 25, 8, 3, 5, 10])
 whiteboard24()
-areCurleyBracesMatched('{}{{}{{{}')
+areCurleyBracesMatched('{{{}}{}}')
