@@ -483,6 +483,13 @@ function whiteboard24() {
 
 function areCurleyBracesMatched(braces) {
   bracesArr = braces.split
+  leftBrace = 0
+  rightBrace = 0
+  console.log(bracesArr)
+  for (let i = 0; i < bracesArr.length; i++) {
+    console.log(i)
+    bracesArr[i] == '{' ? console.log('left') : console.log('right')
+  }
 
 }
 whiteboard1()
