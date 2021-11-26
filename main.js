@@ -492,6 +492,13 @@ function areCurlyBracesMatched(braces) {
   console.log(rightBrace)
   document.getElementById('solution24').innerHTML = (leftBrace == rightBrace ? true : false)
 }
+
+function whiteboard25() {
+  let problem25 = 'String Diamond'
+  let instructions25 = 'Your task is to return a string that displays a diamond shape on the screen using asterisk (“*”) characters.'
+  document.getElementById('problem25').innerHTML = problem25
+  document.getElementById('instructions25').innerHTML = instructions25
+}
 whiteboard1()
 whiteboard2()
 whiteboard3()
