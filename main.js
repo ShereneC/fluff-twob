@@ -505,8 +505,8 @@ function makeADiamond(stopNum) {
   if (stopNum % 2 == 0 || stopNum < 1) {
     return null
   } else {
-    rowNum = 0
-    while
+    for (let i = 1; i <= stopNum; i++)
+      console.log((' '.repeat(stopNum / 2)) + '*')
   }
 
 
@@ -548,3 +548,4 @@ whiteboard23()
 containsDuplicate([2, 7, 11, 15, 25, 8, 3, 5, 10])
 whiteboard24()
 whiteboard25()
+makeADiamond(5)
