@@ -499,6 +499,19 @@ function whiteboard25() {
   document.getElementById('problem25').innerHTML = problem25
   document.getElementById('instructions25').innerHTML = instructions25
 }
+
+function makeADiamond(stopNum) {
+  startNum = 1
+  if (stopNum % 2 == 0 || stopNum < 1) {
+    return null
+  } else {
+    rowNum = 0
+    while
+  }
+
+
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
