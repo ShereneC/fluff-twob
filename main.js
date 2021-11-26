@@ -481,7 +481,7 @@ function whiteboard24() {
   document.getElementById('instructions24').innerHTML = instructions24
 }
 
-function areCurleyBracesMatched(braces) {
+function areCurlyBracesMatched(braces) {
   bracesArr = braces.split('')
   leftBrace = 0
   rightBrace = 0
@@ -527,3 +527,4 @@ twoSums([2, 7, 11, 15, 25, 3, 4, 9, 10], 19)
 whiteboard23()
 containsDuplicate([2, 7, 11, 15, 25, 8, 3, 5, 10])
 whiteboard24()
+whiteboard25()
