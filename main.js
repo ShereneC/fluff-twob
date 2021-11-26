@@ -464,9 +464,11 @@ function whiteboard23() {
 
 function containsDuplicate(numBers) {
   for (let i = 0; i < numBers.length - 1; i++) {
-    for (let j = 1; j < numBers.length; j++) {
+    for (let j = i + 1; j < numBers.length; j++) {
+      console.log(numBers[i], numBers[j])
       if (numBers[i] === numBers[j]) {
         console.log('There are equal numbers' + numBers[i] + ',' + numBers[j])
+        return
       }
     }
   }
@@ -506,5 +508,5 @@ maxProfit([8, 20, 11, 46, 19, 5])
 whiteboard22()
 twoSums([2, 7, 11, 15, 25, 3, 4, 9, 10], 19)
 whiteboard23()
-containsDuplicate([2, 7, 11, 15, 25, 9, 3, 5, 10])
+containsDuplicate([2, 7, 11, 15, 25, 7, 3, 5, 10])
 // whiteboard24()
