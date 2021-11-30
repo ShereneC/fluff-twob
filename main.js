@@ -501,13 +501,17 @@ function whiteboard25() {
 }
 
 function makeADiamond(stopNum) {
-  startNum = 1
   if (stopNum % 2 == 0 || stopNum < 1) {
     return null
   } else {
-    for (let i = 1; i <= stopNum; i++)
+    for (let i = 1; i <= stopNum; i++) {
       // NOTE do I need more for loops, or can the logic in this one get the job done?
-      console.log((' '.repeat(stopNum / 2)) + '*'.repeat(startNum + i))
+      console.log((' '.repeat(stopNum / 2)) + '*'.repeat(i))
+    }
+    for (let j = stopNum; j > 0; j--) {
+      console.log((' '.repeat(stopNum / 2)) + '*'.repeat(j))
+    }
+
   }
 
 
@@ -549,4 +553,4 @@ whiteboard23()
 containsDuplicate([2, 7, 11, 15, 25, 8, 3, 5, 10])
 whiteboard24()
 whiteboard25()
-makeADiamond(13)
+makeADiamond(7)
