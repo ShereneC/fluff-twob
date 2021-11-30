@@ -501,13 +501,13 @@ function whiteboard25() {
 }
 
 function makeADiamond(stopNum) {
+  startNum = 1
   if (stopNum % 2 == 0 || stopNum < 1) {
     return null
   } else {
     for (let i = 1; i <= stopNum; i++)
       // NOTE do I need more for loops, or can the logic in this one get the job done?
-      startNum = 1
-    console.log((' '.repeat(stopNum / 2)) + '*'.repeat(startNum))
+      console.log((' '.repeat(stopNum / 2)) + '*'.repeat(startNum + i))
   }
 
 
