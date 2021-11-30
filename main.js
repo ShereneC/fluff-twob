@@ -505,17 +505,14 @@ function makeADiamond(stopNum) {
     return null
   } else {
     for (let i = 1; i <= stopNum; i++) {
-      // NOTE do I need more for loops, or can the logic in this one get the job done?
       // I can get the right number of asterisks, but not able to center them.  
+      //NOTE try making it its own col, then centering it in that col.  
       console.log((' '.repeat(stopNum / 2)) + '*'.repeat(i))
     }
-    for (let j = stopNum; j > 0; j--) {
+    for (let j = stopNum - 1; j > 0; j--) {
       console.log((' '.repeat(stopNum / 2)) + '*'.repeat(j))
     }
-
   }
-
-
 }
 
 whiteboard1()
