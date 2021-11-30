@@ -506,10 +506,11 @@ function makeADiamond(stopNum) {
   } else {
     for (let i = 1; i <= stopNum; i++) {
       // NOTE do I need more for loops, or can the logic in this one get the job done?
-      console.log((' '.repeat((stopNum / 2) - i)) + '*'.repeat(i))
+      // I can get the right number of asterisks, but not able to center them.  
+      console.log((' '.repeat(stopNum / 2)) + '*'.repeat(i))
     }
     for (let j = stopNum; j > 0; j--) {
-      console.log((' '.repeat((stopNum / 2) + j)) + '*'.repeat(j))
+      console.log((' '.repeat(stopNum / 2)) + '*'.repeat(j))
     }
 
   }
