@@ -506,6 +506,7 @@ function makeADiamond(stopNum) {
     return null
   } else {
     for (let i = 1; i <= stopNum; i++)
+      // NOTE do I need more for loops, or can the logic in this one get the job done?
       console.log((' '.repeat(stopNum / 2)) + '*')
   }
 
