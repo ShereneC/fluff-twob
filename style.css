@@ -15,3 +15,9 @@ main {
 header {
   background-color: bisque;
 }
+
+.noWrap {
+  /* font-size: 2em;
+  font-weight: bold; */
+  white-space: pre-wrap;
+}
