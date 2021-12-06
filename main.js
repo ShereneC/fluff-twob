@@ -502,6 +502,7 @@ function whiteboard25() {
 
 function makeADiamond(stopNum) {
   if (stopNum % 2 == 0 || stopNum < 1) {
+    document.getElementById('solution25').innerHTML = 'Please choose an odd number'
     return null
   } else {
     for (let i = 1; i <= stopNum; i++) {
