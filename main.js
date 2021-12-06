@@ -508,6 +508,7 @@ function makeADiamond(stopNum) {
       // I can get the right number of asterisks, but not able to center them.  
       //NOTE try making it its own col, then centering it in that col.  
       console.log((' '.repeat(stopNum / 2)) + '*'.repeat(i))
+      document.getElementById('solution25').innerHTML += ("\n ".repeat(stopNum / 2)) + '*'.repeat(i)
     }
     for (let j = stopNum - 1; j > 0; j--) {
       console.log((' '.repeat(stopNum / 2)) + '*'.repeat(j))
