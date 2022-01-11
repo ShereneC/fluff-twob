@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-  <title>Fluff-Two</title>
+  <title>Whiteboard Challenges</title>
 </head>
+
 <body class="container-fluid vh-100 d-flex flex-column">
   <header class="row justify-content-center">
-    <h1>Fluff-Two</h1>
+    <h1>Whiteboard Challenges</h1>
   </header>
   <main class="row">
     <div class="col-12 bg-beige shadow rounded my-2">
       <h4 id="problem1"></h4>
-<h5 id="instructions1"></h5>
-<h3 id="solution1"></h3>
+      <h5 id="instructions1"></h5>
+      <h3 id="solution1"></h3>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
       <h4 id="problem2"></h4>
-<h5 id="instructions2"></h5>
-<form action="submit">
-  <input name="inputNumber" id="inputNumber" type="number">
-  <button type="button" class="btn btn-primary" onclick="evenOrOdd(document.getElementById('inputNumber').value)">Submit Number</button>
-</form>
-<h3 id="solution2"></h3>
+      <h5 id="instructions2"></h5>
+      <form action="submit">
+        <input name="inputNumber" id="inputNumber" type="number">
+        <button type="button" class="btn btn-primary"
+          onclick="evenOrOdd(document.getElementById('inputNumber').value)">Submit Number</button>
+      </form>
+      <h3 id="solution2"></h3>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
       <h4>Train Station Problem</h4>
@@ -44,7 +47,8 @@
       <h4 id="problem4"></h4>
       <h5 id="instructions4"></h5>
       <input type="text" id="inputWord" name="inputWord">
-      <button type="button" class="btn btn-primary" onclick="palindrome(document.getElementById('inputWord').value)">Submit Word</button>
+      <button type="button" class="btn btn-primary"
+        onclick="palindrome(document.getElementById('inputWord').value)">Submit Word</button>
       <h4 id="solution4"></h4>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
@@ -74,7 +78,9 @@
       <input type="number" id="num1" name="num1">
       <input type="number" id="num2" name="num2">
       <input type="number" id="num3" name="num3">
-      <button onclick="triangulation(document.getElementById('num1').value, document.getElementById('num2').value, document.getElementById('num3').value)">Submit Numbers</button>
+      <button
+        onclick="triangulation(document.getElementById('num1').value, document.getElementById('num2').value, document.getElementById('num3').value)">Submit
+        Numbers</button>
       <h4 id="solution8"></h4>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
@@ -91,14 +97,16 @@
       <h4 id="problem11"></h4>
       <h5 id="instructions11"></h5>
       <input type="text" id="reverseSentence" name="reverseSentence">
-      <button type="button" class="btn btn-primary" onclick="reverseWords(document.getElementById('reverseSentence').value)">Submit Sentence</button>
+      <button type="button" class="btn btn-primary"
+        onclick="reverseWords(document.getElementById('reverseSentence').value)">Submit Sentence</button>
       <h4 id="solution11"></h4>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
       <h4 id="problem12"></h4>
       <h5 id="instructions12"></h5>
       <input type="number" id="fbNum" name="fbNum">
-      <button type="button" class="btn btn-primary" onclick="fizzBuzz(document.getElementById('fbNum').value)">Submit Number</button>
+      <button type="button" class="btn btn-primary" onclick="fizzBuzz(document.getElementById('fbNum').value)">Submit
+        Number</button>
       <h6 id="solution12"></h6>
     </div>
     <div class="col-12 bg-beige shadow rounded my-2">
@@ -106,13 +114,124 @@
       <h5 id="instructions13"></h5>
       <input type="text" id="str1Anagram" id="str1Anagram">
       <input type="text" id="str2Anagram" id="str2Anagram">
-      <button type="button" class="btn btn-primary" onclick="isAnagram(document.getElementById('str1Anagram').value,document.getElementById('str2Anagram').value)">Submit Strings</button>
+      <button type="button" class="btn btn-primary"
+        onclick="isAnagram(document.getElementById('str1Anagram').value,document.getElementById('str2Anagram').value)">Submit
+        Strings</button>
       <h4 id="solution13"></h4>
     </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem14"></h4>
+      <h5 id="instructions14"></h5>
+      <input type="number" id="incrementNumber" name="incrementNumber">
+      <button type="button" class="btn btn-primary"
+        onclick="c.add(document.getElementById('incrementNumber').value)">Submit Increment</button>
+      <h4 id="solution14"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem15"></h4>
+      <h5 id="instructions15"></h5>
+      <input type="text" id="tfStatement" name="tfStatement">
+      <button type="button" class="btn btn-primary"
+        onclick="trueOrFalse(document.getElementById('tfStatement').value)">Submit Statement</button>
+      <h4 id="solution15"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem16"></h4>
+      <h5 id="instructions16"></h5>
+      <input type="text" id="findVowelString" name="findVowelString">
+      <button type="button" class="btn btn-primary"
+        onclick="findVowels(document.getElementById('findVowelString').value)">Submit String</button>
+      <h4 id="solution16"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem17"></h4>
+      <h5 id="instructions17"></h5>
+      <input type="number" id="fibLength" name="fibLength">
+      <button type="button" class="btn btn-primary"
+        onclick="fibonacci(document.getElementById('fibLength').value)">Submit Length</button>
+      <h4 id="solution17" class="text-break"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem18"></h4>
+      <h5 id="instructions18"></h5>
+      <ul id="todo-app">
+        <li class="item">Walk the dog</li>
+        <li class="item">Pay bills</li>
+        <li class="item">Make dinner</li>
+        <li class="item">Code for one hour</li>
+      </ul>
+      <h4 id="solution18" class="text-break"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem19"></h4>
+      <h5 id="instructions19"></h5>
+      <ul id="todo-app2">
+        <li class="item">Walk the dog2</li>
+        <li class="item">Pay bills2</li>
+        <li class="item">Make dinner2</li>
+        <li class="item">Code for one hour2</li>
+      </ul>
+      <h4 id="solution19" class="text-break"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem20"></h4>
+      <h5 id="instructions20"></h5>
+      <input type="number" name="numList[]" value="">
+      <input type="number" name="numList[]" value="">
+      <input type="number" name="numList[]" value="">
+      <input type="number" name="numList[]" value="">
+      <button type="button" class="btn btn-primary"
+        onclick="l.printIndex(document.getElementsByName('numList[]'))">Submit Number List</button>
+      <h4 id="solution20"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem21"></h4>
+      <h5 id="instructions21"></h5>
+      <h4 id="solution21"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem22"></h4>
+      <h5 id="instructions22"></h5>
+      <h4 id="solution22"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem23"></h4>
+      <h5 id="instructions23"></h5>
+      <h4 id="solution23"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem24"></h4>
+      <h5 id="instructions24"></h5>
+      <input type="text" id="braces" name="braces">
+      <button type="button" class="btn btn-primary"
+        onclick="areCurlyBracesMatched(document.getElementById('braces').value)">Submit Curly Braces</button>
+      <h4 id="solution24"></h4>
+    </div>
+    <div class="col-12 bg-beige shadow rounded my-2">
+      <h4 id="problem25"></h4>
+      <h5 id="instructions25"></h5>
+      <input type="number" id="diamondSize" name="diamondSize">
+      <button type="button" class="btn btn-primary"
+        onclick="makeADiamond(document.getElementById('diamondSize').value)">Submit Diamond Size</button>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 text-center m-0 p-0">
+          <h4 id="solution25" class="noWrap m-0 p-0"></h4>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
   </main>
-  <footer class="row">
+  <footer class="row flex-column">
     <h6>created by Sherene</h6>
+    <p>Sources: www.sitepoint.com/5-common-coding-interview-challenges </p>
+    <p>www.fullstack.cafe/blog/javascript-code-interviw-questions</p>
+    <p>www.freecodecamp.org/news/3-questions-to-watch-out-for-in-a-javascript-interview-725012834ccb</p>
+    <p>www.freecodecamp.org/news/coding-interviews-for-dummies-5e048933b82b/</p>
+    <p>https://dev.to/thepracticaldev/daily-challenge-51-valid-curly-braces-4e6o</p>
+    <p>https://dev.to/thepracticaldev/series/1326</p>
   </footer>
   <script src="main.js"></script>
 </body>
+
 </html>

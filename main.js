@@ -284,7 +284,7 @@ function whiteboard14() {
   document.getElementById('instructions14').innerHTML = instructions14
 }
 function useAClosure() {
-  console.log('Need to put the closure code here.')
+  // i'm here, but commit/push before continuing
 }
 
 whiteboard1()
@@ -304,4 +304,3 @@ modifyArray([1,2,3,4,5], function() {
 whiteboard11()
 whiteboard12()
 whiteboard13()
-whiteboard14()
