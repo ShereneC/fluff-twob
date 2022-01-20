@@ -295,8 +295,8 @@ function whiteboard26() {
 }
 function stripWord(word) {
   let arrWord = word.split('')
-  console.log(arrWord)
   arrWord.splice(0,1)
+  arrWord.splice(arrWord.length -1, 1)
   console.log(arrWord)
 }
 
