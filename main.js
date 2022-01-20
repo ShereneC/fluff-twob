@@ -290,6 +290,8 @@ function useAClosure() {
 function whiteboard26() {
   let problem26 = 'Strip a Word'
   let instructions26 = 'Take a word (longer than 2 characters, and strip the first and last letters from it.'
+  document.getElementById('problem26').innerHTML = problem26
+  document.getElementById('instructions26').innerHTML = instructions26
 }
 
 whiteboard1()
