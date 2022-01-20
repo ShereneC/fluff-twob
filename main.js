@@ -293,6 +293,10 @@ function whiteboard26() {
   document.getElementById('problem26').innerHTML = problem26
   document.getElementById('instructions26').innerHTML = instructions26
 }
+function stripAWord(word) {
+  let arrWord = word.split()
+  console.log(arrWord)
+}
 
 whiteboard1()
 whiteboard2()
