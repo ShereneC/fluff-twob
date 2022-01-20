@@ -294,7 +294,7 @@ function whiteboard26() {
   document.getElementById('instructions26').innerHTML = instructions26
 }
 function stripWord(word) {
-  let arrWord = word.split(' ')
+  let arrWord = word.split('')
   console.log(arrWord)
   arrWord.splice(0,1)
   console.log(arrWord)
