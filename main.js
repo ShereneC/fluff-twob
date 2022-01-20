@@ -297,7 +297,7 @@ function stripWord(word) {
   let arrWord = word.split('')
   arrWord.splice(0,1)
   arrWord.splice(arrWord.length -1, 1)
-  let newWord = arrWord.join()
+  let newWord = arrWord.join('')
   console.log(newWord)
 }
 
