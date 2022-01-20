@@ -287,6 +287,11 @@ function useAClosure() {
   // i'm here, but commit/push before continuing
 }
 
+function whiteboard26() {
+  let problem26 = 'Strip a Word'
+  let instructions26 = 'Take a word (longer than 2 characters, and strip the first and last letters from it.'
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -304,3 +309,6 @@ modifyArray([1,2,3,4,5], function() {
 whiteboard11()
 whiteboard12()
 whiteboard13()
+
+
+whiteboard26()
