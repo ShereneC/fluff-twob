@@ -299,6 +299,7 @@ function stripWord(word) {
   arrWord.splice(arrWord.length -1, 1)
   let newWord = arrWord.join('')
   console.log(newWord)
+  document.getElementById('solution26').innerHTML= newWord
 }
 
 whiteboard1()
