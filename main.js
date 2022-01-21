@@ -302,8 +302,8 @@ function stripWord(word) {
 }
 
 function whiteboard27() {
-  let problem27 = ''
-  let instructions27 = ''
+  let problem27 = 'Vowel Counter'
+  let instructions27 = 'Given a word or phrase, count the vowels, a,e,i,o,u.  Lower or Upper case.'
   document.getElementById('problem27').innerHTML = problem27
   document.getElementById('instructions27').innerHTML = instructions27
 }
