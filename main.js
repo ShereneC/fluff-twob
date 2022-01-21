@@ -309,8 +309,9 @@ function whiteboard27() {
 }
 function countVowels(word) {
   let numVowels = 0
-
-  document.getElementById('solution27').innerHTML= numVowels
+  word = word.toLower()
+  console.log(word)
+  document.getElementById('solution27').innerHTML= numVowels.toString()
 }
 whiteboard1()
 whiteboard2()
