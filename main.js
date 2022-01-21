@@ -311,7 +311,8 @@ function countVowels(word) {
   let numVowels = 0
   word = word.toLowerCase()
   for (let i=0; i<word.length; i++){
-    if (word[i] === ('a' || 'e' || 'i'|| 'o'|| 'u'))
+    console.log(word[i])
+    if (word[i] == ('a' || 'e' || 'i'|| 'o'|| 'u'))
     numVowels++
   }
   document.getElementById('solution27').innerHTML= numVowels.toString()
