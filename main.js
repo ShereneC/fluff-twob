@@ -310,7 +310,7 @@ function whiteboard27() {
 function countVowels(word) {
   let numVowels = 0
 
-  document.getElementById('solution26').innerHTML= newWord
+  document.getElementById('solution27').innerHTML= numVowels
 }
 whiteboard1()
 whiteboard2()
