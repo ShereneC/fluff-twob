@@ -301,6 +301,13 @@ function stripWord(word) {
   document.getElementById('solution26').innerHTML= newWord
 }
 
+function whiteboard27() {
+  let problem27 = ''
+  let instructions27 = ''
+  document.getElementById('problem27').innerHTML = problem27
+  document.getElementById('instructions27').innerHTML = instructions27
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -321,3 +328,4 @@ whiteboard13()
 
 
 whiteboard26()
+whiteboard27()
