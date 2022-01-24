@@ -315,26 +315,39 @@ function countVowels(word) {
       case 'a':
         numVowels++
         break
-      case 'e':
-        numVowels++
-        break
-      case 'i':
-        numVowels++
-        break
-      case 'o':
-        numVowels++
-        break
-      case 'u':
-        numVowels++
-        break
-      default:
-        break
-    }
-  }
-  document.getElementById('solution27').innerHTML= numVowels.toString()
+        case 'e':
+          numVowels++
+          break
+          case 'i':
+            numVowels++
+            break
+            case 'o':
+              numVowels++
+              break
+              case 'u':
+                numVowels++
+                break
+                default:
+                  break
+                }
+              }
+              document.getElementById('solution27').innerHTML= numVowels.toString()
+            }
+
+function whiteboard28() {
+              let problem28 = 'May I have your number?'
+              let instructions28 = 'Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.The returned format must be correct in order to complete this challenge.Don\'t forget the space after the closing parentheses!'
+              document.getElementById('problem28').innerHTML = problem28
+              document.getElementById('instructions28').innerHTML = instructions28
+            }
+
+function phoneNumber() {
+
 }
-whiteboard1()
-whiteboard2()
+
+
+            whiteboard1()
+            whiteboard2()
 whiteboard3()
 whiteboard4()
 whiteboard5()
