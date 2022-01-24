@@ -311,9 +311,13 @@ function countVowels(word) {
   let numVowels = 0
   word = word.toLowerCase()
   for (let i=0; i<word.length; i++){
+    switch (word[i]) {
+      case 'a':
+        numVowels++
+        break
+    }
     console.log(word[i])
-    if (word[i] == 'a' || 'e' || 'i'|| 'o'|| 'u') {
-      numVowels++
+    if (word[i] === 'a' || 'e') {
     }
     console.log(numVowels)
   }
