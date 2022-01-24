@@ -315,11 +315,21 @@ function countVowels(word) {
       case 'a':
         numVowels++
         break
+      case 'e':
+        numVowels++
+        break
+      case 'i':
+        numVowels++
+        break
+      case 'o':
+        numVowels++
+        break
+      case 'u':
+        numVowels++
+        break
+      default:
+        break
     }
-    console.log(word[i])
-    if (word[i] === 'a' || 'e') {
-    }
-    console.log(numVowels)
   }
   document.getElementById('solution27').innerHTML= numVowels.toString()
 }
