@@ -342,7 +342,9 @@ function whiteboard28() {
             }
 
 function phoneNumber() {
-
+let arr = [1,0,2,2,2,5,5,5,9]
+let phoneStr = ('(')
+console.log(phoneStr)
 }
 
 
@@ -368,3 +370,4 @@ whiteboard13()
 whiteboard26()
 whiteboard27()
 whiteboard28()
+phoneNumber()
