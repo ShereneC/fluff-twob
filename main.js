@@ -342,8 +342,8 @@ function whiteboard28() {
             }
 
 function phoneNumber() {
-let arr = [1,0,2,2,2,5,5,5,9]
-let phoneStr = ('(')
+let arr = [1,0,2,2,2,5,5,5,9,7]
+let phoneStr = ('(' + arr[0] + arr[1] + arr[2] + ') ')
 console.log(phoneStr)
 }
 
