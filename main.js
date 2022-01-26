@@ -347,6 +347,14 @@ let phoneStr = ('(' + arr[0] + arr[1] + arr[2] + ') ' + arr[3] + arr[4] + arr[5]
 document.getElementById('solution28').innerHTML = phoneStr
 }
 
+function whiteboard29() {
+  let problem29 = ''
+  let instructions29 = ''
+  document.getElementById('problem29').innerHTML = problem29
+  document.getElementById('instructions29').innerHTML = instructions29
+}
+
+
 
 whiteboard1()
 whiteboard2()
