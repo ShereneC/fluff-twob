@@ -343,13 +343,13 @@ function whiteboard28() {
 
 function phoneNumber() {
 let arr = [1,0,2,2,2,5,5,5,9,7]
-let phoneStr = ('(' + arr[0] + arr[1] + arr[2] + ') ')
+let phoneStr = ('(' + arr[0] + arr[1] + arr[2] + ') ' + arr[3] + arr[4] + arr[5] + '-' + arr[6] + arr[7] + arr[8] + arr[9])
 console.log(phoneStr)
 }
 
 
-            whiteboard1()
-            whiteboard2()
+whiteboard1()
+whiteboard2()
 whiteboard3()
 whiteboard4()
 whiteboard5()
