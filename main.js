@@ -348,8 +348,8 @@ document.getElementById('solution28').innerHTML = phoneStr
 }
 
 function whiteboard29() {
-  let problem29 = ''
-  let instructions29 = ''
+  let problem29 = 'Stop gninnipS My sdroW!'
+  let instructions29 = 'Write a function that takes in a string of one or more words and returns the same string, but with all words with five letters or more reversed. Strings passed in will consist of only letters and spaces.'
   document.getElementById('problem29').innerHTML = problem29
   document.getElementById('instructions29').innerHTML = instructions29
 }
