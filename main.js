@@ -360,7 +360,7 @@ function stringReverse(str) {
     str[i] = str[i].split('').reverse().join('')
   }
   str = str.join(' ')
-  console.log(str)
+  document.getElementById('solution29').innerHTML = str
 }
 
 
