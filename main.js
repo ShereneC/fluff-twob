@@ -355,11 +355,12 @@ function whiteboard29() {
 }
 function stringReverse(str) {
   str = str.split(' ')
+  
   str[0] = str[0].split('').reverse().join('')
-  console.log(str[0])
-//   for (let i=0; i<str.length; i++){
-// str[i] = str[i].reverse().join()
-//   }
+  // for (let i=0; i<str.length; i++){
+  //   str[i] = str[i].split('').reverse().join('')
+  // }
+  console.log(str)
 }
 
 
