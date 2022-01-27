@@ -353,6 +353,10 @@ function whiteboard29() {
   document.getElementById('problem29').innerHTML = problem29
   document.getElementById('instructions29').innerHTML = instructions29
 }
+function stringReverse(str) {
+  str = str.split('')
+  console.log(str)
+}
 
 
 
