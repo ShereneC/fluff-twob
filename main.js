@@ -354,7 +354,10 @@ function whiteboard29() {
   document.getElementById('instructions29').innerHTML = instructions29
 }
 function stringReverse(str) {
-  str = str.split('')
+  str = str.split(' ')
+  for (let i=0; i<str.length; i++){
+str[i] = str[i].reverse().join()
+  }
   console.log(str)
 }
 
