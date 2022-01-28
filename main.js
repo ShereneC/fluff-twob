@@ -370,6 +370,8 @@ function whiteboard30() {
 }
 function pigLatin() {
   let str = 'How are you'
+  let newStr = str.split(' ')
+  newStr[0] = newStr[0].splice(0,1)
   console.log(str)
 }
 
