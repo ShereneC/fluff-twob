@@ -373,7 +373,8 @@ function pigLatin() {
   let newStr = str.split(' ')
   let newWord = newStr[0].split('')
   let letterToMove = newWord.splice(0,1)
-  console.log(str)
+  console.log(letterToMove)
+  console.log(newWord)
 }
 
 
