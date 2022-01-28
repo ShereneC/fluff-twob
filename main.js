@@ -363,8 +363,8 @@ function stringReverse(str) {
   document.getElementById('solution29').innerHTML = str
 }
 function whiteboard30() {
-  let problem30 = 'Stop gninnipS My sdroW!'
-  let instructions30 = 'Write a function that takes in a string of one or more words and returns the same string, but with all words with five letters or more reversed. Strings passed in will consist of only letters and spaces.'
+  let problem30 = 'Pig Latin'
+  let instructions30 = ''
   document.getElementById('problem30').innerHTML = problem30
   document.getElementById('instructions30').innerHTML = instructions30
 }
