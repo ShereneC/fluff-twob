@@ -364,7 +364,7 @@ function stringReverse(str) {
 }
 function whiteboard30() {
   let problem30 = 'Pig Latin'
-  let instructions30 = ''
+  let instructions30 = 'Write a function that moves the first letter of each word to the end of the word, then add "ay". Leave punctuation untouched.'
   document.getElementById('problem30').innerHTML = problem30
   document.getElementById('instructions30').innerHTML = instructions30
 }
