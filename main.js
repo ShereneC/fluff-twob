@@ -368,7 +368,10 @@ function whiteboard30() {
   document.getElementById('problem30').innerHTML = problem30
   document.getElementById('instructions30').innerHTML = instructions30
 }
-
+function pigLatin() {
+  let str = 'How are you'
+  console.log(str)
+}
 
 
 whiteboard1()
@@ -395,3 +398,4 @@ whiteboard27()
 whiteboard28()
 whiteboard29()
 whiteboard30()
+pigLatin()
