@@ -380,7 +380,20 @@ function pigLatin() {
 
   for (let i=0; i < newStr.length; i++) {
     let arr = newStr[i].split('')
-    let firstLetter = arr.splice(0,1)
+    switch (arr[i][0]) {
+      case 'a':
+        break
+      case 'e':
+        break
+      case 'i':
+        break
+      case 'o':
+        break
+      case 'u':
+        break
+      default:
+        let firstLetter = arr.splice(0,1)
+    }
     let newWord = arr.join('')
     newWord+= (firstLetter + 'ay')
     finalStr+= newWord + ' '
