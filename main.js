@@ -378,11 +378,13 @@ function pigLatin() {
   // console.log(newWord)
 
   for (let i=0; i < newStr.length; i++) {
-    let newWord = newStr[i].split('')
-    let letterToMove = newWord.splice(0,1)
-    newWord.concat(letterToMove + 'ay').join('')
-    console.log(letterToMove)
-    console.log(newWord)
+    let arr = newStr[i].split('')
+let firstLetter = arr.splice(0,1)
+let newWord = arr.join('')
+newWord+= (firstLetter + 'ay')
+    console.log(arr)
+    console.log(firstLetter)
+console.log(newWord)
   }
 }
 
