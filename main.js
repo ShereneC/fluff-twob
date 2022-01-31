@@ -371,6 +371,7 @@ function whiteboard30() {
 function pigLatin() {
   let str = 'How are you'
   let newStr = str.split(' ')
+  let finalStr = ''
   // let newWord = newStr[0].split('')
   // let letterToMove = newWord.splice(0,1)
   // newWord = newWord.concat(letterToMove + 'ay').join('')
@@ -379,12 +380,11 @@ function pigLatin() {
 
   for (let i=0; i < newStr.length; i++) {
     let arr = newStr[i].split('')
-let firstLetter = arr.splice(0,1)
-let newWord = arr.join('')
-newWord+= (firstLetter + 'ay')
-    console.log(arr)
-    console.log(firstLetter)
-console.log(newWord)
+    let firstLetter = arr.splice(0,1)
+    let newWord = arr.join('')
+    newWord+= (firstLetter + 'ay')
+    finalStr+= newWord + ' '
+    console.log(finalStr)
   }
 }
 
