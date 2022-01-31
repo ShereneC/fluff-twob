@@ -369,7 +369,7 @@ function whiteboard30() {
   document.getElementById('instructions30').innerHTML = instructions30
 }
 function pigLatin() {
-  let str = 'How are you'
+  let str = 'Hello My Friend'
   let newStr = str.split(' ')
   let finalStr = ''
   // let newWord = newStr[0].split('')
@@ -380,6 +380,7 @@ function pigLatin() {
 
   for (let i=0; i < newStr.length; i++) {
     let arr = newStr[i].split('')
+    let firstLetter = ''
     switch (arr[i][0]) {
       case 'a':
         break
@@ -392,13 +393,13 @@ function pigLatin() {
       case 'u':
         break
       default:
-        let firstLetter = arr.splice(0,1)
+        firstLetter = arr.splice(0,1)
     }
     let newWord = arr.join('')
     newWord+= (firstLetter + 'ay')
     finalStr+= newWord + ' '
-    console.log(finalStr)
   }
+  console.log(finalStr)
 }
 
 whiteboard1()
