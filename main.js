@@ -371,21 +371,20 @@ function whiteboard30() {
 function pigLatin() {
   let str = 'How are you'
   let newStr = str.split(' ')
-  let newWord = newStr[0].split('')
-  let letterToMove = newWord.splice(0,1)
-  newWord = newWord.concat(letterToMove + 'ay').join('')
-  console.log(letterToMove)
-  console.log(newWord)
+  // let newWord = newStr[0].split('')
+  // let letterToMove = newWord.splice(0,1)
+  // newWord = newWord.concat(letterToMove + 'ay').join('')
+  // console.log(letterToMove)
+  // console.log(newWord)
 
   for (let i=0; i < newStr.length; i++) {
-    newStr[i] = newStr[i].split('')
-    let letterToMove = newStr[i].splice(0,1)
-    let newWord = newStr[i].concat(letterToMove + 'ay').join('')
+    let newWord = newStr[i].split('')
+    let letterToMove = newWord.splice(0,1)
+    newWord.concat(letterToMove + 'ay').join('')
     console.log(letterToMove)
     console.log(newWord)
   }
 }
-
 
 whiteboard1()
 whiteboard2()
