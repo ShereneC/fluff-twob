@@ -400,7 +400,7 @@ function pigLatin() {
     finalStr+= newWord + ' '
     firstLetter = ''
   }
-  console.log(finalStr)
+  document.getElementById('solution30').innerHTML = finalStr
 }
 
 whiteboard1()
