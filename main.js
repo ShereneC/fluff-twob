@@ -369,7 +369,7 @@ function whiteboard30() {
   document.getElementById('instructions30').innerHTML = instructions30
 }
 function pigLatin() {
-  let str = 'Hello My Friend'
+  let str = 'That is cool'
   let newStr = str.split(' ')
   let finalStr = ''
   // let newWord = newStr[0].split('')
