@@ -378,8 +378,8 @@ function pigLatin() {
   // console.log(letterToMove)
   // console.log(newWord)
 
-  let firstLetter = ''
   for (let i=0; i < newStr.length; i++) {
+    let firstLetter = ''
     let arr = newStr[i].split('')
     switch (arr[i][0]) {
       case 'a':
