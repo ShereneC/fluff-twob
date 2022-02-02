@@ -392,14 +392,13 @@ function pigLatin() {
         break
       case 'u':
         break
-      case 'y':
-        break
       default:
         firstLetter = arr.splice(0,1)
     }
     let newWord = arr.join('')
     newWord+= (firstLetter + 'ay')
     finalStr+= newWord + ' '
+    firstLetter = ''
   }
   console.log(finalStr)
 }
