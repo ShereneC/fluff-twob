@@ -403,6 +403,12 @@ function pigLatin() {
   document.getElementById('solution30').innerHTML = finalStr
 }
 
+function pigLatinTwo() {
+  let str = 'Walk around the tree'
+  let newStr = str.split(' ')
+  console.log(newStr)
+}
+
 whiteboard1()
 whiteboard2()
 whiteboard3()
@@ -427,4 +433,3 @@ whiteboard27()
 whiteboard28()
 whiteboard29()
 whiteboard30()
-pigLatin()
