@@ -407,6 +407,8 @@ function pigLatinTwo() {
   let str = 'Walk around the tree'
   let newStr = str.split(' ')
   console.log(newStr)
+  console.log(newStr[0][0])
+  
 }
 
 whiteboard1()
@@ -433,3 +435,4 @@ whiteboard27()
 whiteboard28()
 whiteboard29()
 whiteboard30()
+pigLatinTwo()
