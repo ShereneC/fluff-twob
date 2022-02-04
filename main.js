@@ -408,7 +408,13 @@ function pigLatinTwo() {
   let newStr = str.split(' ')
   console.log(newStr)
   console.log(newStr[0][0])
-  
+  let firstPart = ''
+  if (newStr[0][0] != 'a' || 'e' || 'i' || 'o' || 'u') {
+firstPart = newStr[0][0]
+newStr[0] = newStr[0].slice(0,1)
+  } else {
+
+  }
 }
 
 whiteboard1()
