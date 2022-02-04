@@ -406,14 +406,16 @@ function pigLatin() {
 function pigLatinTwo() {
   let str = 'Walk around the tree'
   let newStr = str.split(' ')
+  let translation = ''
   console.log(newStr)
   console.log(newStr[0][0])
-  let firstPart = ''
-  if (newStr[0][0] != 'a' || 'e' || 'i' || 'o' || 'u') {
-firstPart = newStr[0][0]
-newStr[0] = newStr[0].slice(0,1)
-  } else {
-
+  for (let i =0; i<newStr.length; i++) {
+    let firstPart = ''
+    if (newStr[0][0] != 'a' || 'e' || 'i' || 'o' || 'u') {
+  firstPart = newStr[0][0]
+  newStr[0] = newStr[0].slice(1)
+  console.log(newStr)
+  }
   }
 }
 
