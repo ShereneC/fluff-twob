@@ -417,6 +417,11 @@ function pigLatinTwo() {
   newStr[i] = newStr[i].slice(1)
   console.log(newStr)
   }
+  if(!vowels.includes(newStr[i][0])) {
+    firstPart = firstPart + newStr[i][0]
+newStr[i] = newStr[i].slice(1)
+console.log(newStr)
+}
       }
 }
 
