@@ -419,7 +419,7 @@ function pigLatinTwo() {
   }
   if(!vowels.includes(newStr[i][0])) {
     firstPart = firstPart + newStr[i][0]
-newStr[i] = newStr[i].slice(1)
+newStr[i] = newStr[i].slice(1) + firstPart + 'ay'
 console.log(newStr.join(' '))
 }
       }
