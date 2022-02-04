@@ -412,12 +412,12 @@ function pigLatinTwo() {
   console.log(newStr[0][0])
   for (let i =0; i<newStr.length; i++) {
     let firstPart = ''
-    if (newStr[i][0] != 'a' ) {
-  firstPart = newStr[i][0]
+    if(!vowels.includes(newStr[i][0])) {
+      firstPart = newStr[i][0]
   newStr[i] = newStr[i].slice(1)
   console.log(newStr)
   }
-  }
+      }
 }
 
 whiteboard1()
