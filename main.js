@@ -404,6 +404,7 @@ function pigLatin() {
 }
 
 function pigLatinTwo() {
+  let vowels = 'aeiou'
   let str = 'Walk around the tree'
   let newStr = str.split(' ')
   let translation = ''
@@ -411,9 +412,9 @@ function pigLatinTwo() {
   console.log(newStr[0][0])
   for (let i =0; i<newStr.length; i++) {
     let firstPart = ''
-    if (newStr[0][0] != 'a' || 'e' || 'i' || 'o' || 'u') {
-  firstPart = newStr[0][0]
-  newStr[0] = newStr[0].slice(1)
+    if (newStr[i][0] != 'a' ) {
+  firstPart = newStr[i][0]
+  newStr[i] = newStr[i].slice(1)
   console.log(newStr)
   }
   }
